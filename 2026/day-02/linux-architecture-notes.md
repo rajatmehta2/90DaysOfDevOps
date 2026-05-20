@@ -17,6 +17,7 @@ Date: 18 May 2026
           🟢 Running / Runnable (R): The process is either currently actively utilizing the CPU or waiting in the execution queue to be processed.
           
           💤 Sleeping (S / D):
+                
                 Interruptible (S): Waiting for an event or signal to wake up.
                 Uninterruptible (D): Deep sleep, usually waiting directly for Hardware/IO operations.
           
