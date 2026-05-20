@@ -69,5 +69,3 @@ Date: 19 May 2026
   📜 4. Operational Commitment
   
     "Real production issues are resolved at the command line. The faster you can inspect logs and network issues, the faster you restore services."
-
-I commit to building my command-line intuition daily, optimizing text-parsing workflows, and utilizing this toolkit to maintain high availability across operations.
