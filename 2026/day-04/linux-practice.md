@@ -37,9 +37,13 @@ Date: 20 May 2026
   🛠️ 2. Mini Troubleshooting Steps
   
     When tracking down an unhealthly application or an unexpected service failure, I use this explicit triage routine:
+    
       1. 📌 Step 1 (Process Evaluation): Check if the process table entry exists using pgrep or ps aux. If the process is absent or stuck in a Zombie/Uninterruptible state, the application engine has broken down completely.
-      2. 📌 Step 2 (Service Lifecycle Verification): Run systemctl status to evaluate the exit code or check if systemd is caught in an infinite crash-restart loop. 
+      
+      2. 📌 Step 2 (Service Lifecycle Verification): Run systemctl status to evaluate the exit code or check if systemd is caught in an infinite crash-restart loop.
+      
       3. 📌 Step 3 (Log Deep-Dive Analysis): Isolate the root cause by querying journalctl -u and trailing the system logs to identify explicit infrastructure errors (e.g., storage exhaustion, bad configs, permission blocks).
+      
       4. 📌 Step 4 (Remediation & Recovery): Adjust configurations, verify system constraints, and use systemctl restart to cleanly restore container workloads and application availability.
 
   📜 3. Execution Commitment
