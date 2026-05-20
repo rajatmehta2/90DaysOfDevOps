@@ -30,20 +30,20 @@
 
   🛠️ 5. Daily Essential Linux Commands
 
-      Command:--- `ps aux`
-      Description & DevOps Use Case:--- View a snapshot of all active processes currently running across the entire system.
+      Command: `ps aux`
+      Description & DevOps Use Case: View a snapshot of all active processes currently running across the entire system.
 
-      Command:--- `top`
-      Description & DevOps Use Case:--- Monitor real-time system resource consumption (CPU, Memory, uptime, Tasks).
+      Command: `top`
+      Description & DevOps Use Case: Monitor real-time system resource consumption (CPU, Memory, uptime, Tasks).
 
-      Command:--- `systemctl status <service>`
-      Description & DevOps Use Case:--- Check the current health, operational status, and runtime logs of a specific managed daemon.
+      Command: `systemctl status <service>`
+      Description & DevOps Use Case: Check the current health, operational status, and runtime logs of a specific managed daemon.
 
-      Command:--- `systemctl restart <service>`
-      Description & DevOps Use Case:--- Safely restart a crashed or updated service to apply new backend configurations.
+      Command: `systemctl restart <service>`
+      Description & DevOps Use Case: Safely restart a crashed or updated service to apply new backend configurations.
 
-      Command:--- `journalctl -xe`
-      Description & DevOps Use Case:--- View deep, detailed kernel and systemd logs to quickly diagnose failing infrastructure components.
+      Command: `journalctl -xe`
+      Description & DevOps Use Case: View deep, detailed kernel and systemd logs to quickly diagnose failing infrastructure components.
 
   📜 6. Execution Commitment
     
