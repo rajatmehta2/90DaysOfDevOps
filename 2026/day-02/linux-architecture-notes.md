@@ -15,34 +15,34 @@
   🔄 3. Process Creation & Management
       
       🚦 Process States
-          🟢 Running / Runnable (R):** The process is either currently actively utilizing the CPU or waiting in the execution queue to be processed.
+          🟢 Running / Runnable (R): The process is either currently actively utilizing the CPU or waiting in the execution queue to be processed.
           💤 Sleeping (S / D):
-                Interruptible (S):* Waiting for an event or signal to wake up.
-                Uninterruptible (D):* Deep sleep, usually waiting directly for Hardware/IO operations.
-          🛑 Stopped (T):** The process has been suspended or paused by a specific operational signal (e.g., `Ctrl+Z`).
-          🧟 Zombie (Z):** A completed process that has terminated, but its entry remains in the process table because the parent process hasn't read its exit status yet.
+                Interruptible (S): Waiting for an event or signal to wake up.
+                Uninterruptible (D): Deep sleep, usually waiting directly for Hardware/IO operations.
+          🛑 Stopped (T): The process has been suspended or paused by a specific operational signal (e.g., `Ctrl+Z`).
+          🧟 Zombie (Z): A completed process that has terminated, but its entry remains in the process table because the parent process hasn't read its exit status yet.
 
   ⚙️ 4. What is systemd & Why It Matters
       
-      🏗️ Service Manager:** `systemd` is the modern init system used to bootstrap the user space and aggressively manage system services, daemons, and dependencies.
-      🚀 Parallel Initialization:** It speeds up system boot times significantly by starting independent services concurrently in parallel.
-      🛠️ Reliability:** It acts as a safety net, actively monitoring system daemons and automatically restarting them if they crash during production uptime.
+      🏗️ Service Manager: `systemd` is the modern init system used to bootstrap the user space and aggressively manage system services, daemons, and dependencies.
+      🚀 Parallel Initialization: It speeds up system boot times significantly by starting independent services concurrently in parallel.
+      🛠️ Reliability: It acts as a safety net, actively monitoring system daemons and automatically restarting them if they crash during production uptime.
 
   🛠️ 5. Daily Essential Linux Commands
 
-      Command: `ps aux`
+      Command: ps aux
       Description & DevOps Use Case: View a snapshot of all active processes currently running across the entire system.
 
-      Command: `top`
+      Command: top
       Description & DevOps Use Case: Monitor real-time system resource consumption (CPU, Memory, uptime, Tasks).
 
-      Command: `systemctl status <service>`
+      Command: systemctl status <service>
       Description & DevOps Use Case: Check the current health, operational status, and runtime logs of a specific managed daemon.
 
-      Command: `systemctl restart <service>`
+      Command: systemctl restart <service>
       Description & DevOps Use Case: Safely restart a crashed or updated service to apply new backend configurations.
 
-      Command: `journalctl -xe`
+      Command: journalctl -xe
       Description & DevOps Use Case: View deep, detailed kernel and systemd logs to quickly diagnose failing infrastructure components.
 
   📜 6. Execution Commitment
