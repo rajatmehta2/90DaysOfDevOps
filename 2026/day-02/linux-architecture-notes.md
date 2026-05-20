@@ -5,23 +5,31 @@ Date: 18 May 2026
   🏗️ 1. The Core Components of Linux
       
       💻 Kernel: The core of the OS that directly interacts with the underlying hardware, managing memory, CPU schedules, and device drivers.
+      
       👥 User Space: The protected memory area where user applications, tools, and CLI commands execute, completely isolated from hardware access.
+      
       🔄 Init / systemd: The very first process (`PID 1`) started by the kernel during boot. It acts as the parent of all other processes and initializes the user space components.
 
   🔄 2. Process Creation & Management
       
       🚦 Process States
+          
           🟢 Running / Runnable (R): The process is either currently actively utilizing the CPU or waiting in the execution queue to be processed.
+          
           💤 Sleeping (S / D):
                 Interruptible (S): Waiting for an event or signal to wake up.
                 Uninterruptible (D): Deep sleep, usually waiting directly for Hardware/IO operations.
+          
           🛑 Stopped (T): The process has been suspended or paused by a specific operational signal (e.g., `Ctrl+Z`).
+          
           🧟 Zombie (Z): A completed process that has terminated, but its entry remains in the process table because the parent process hasn't read its exit status yet.
 
   ⚙️ 3. What is systemd & Why It Matters
       
       🏗️ Service Manager: `systemd` is the modern init system used to bootstrap the user space and aggressively manage system services, daemons, and dependencies.
+      
       🚀 Parallel Initialization: It speeds up system boot times significantly by starting independent services concurrently in parallel.
+      
       🛠️ Reliability: It acts as a safety net, actively monitoring system daemons and automatically restarting them if they crash during production uptime.
 
   🛠️ 4. Daily Essential Linux Commands
