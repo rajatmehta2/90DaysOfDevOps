@@ -43,5 +43,3 @@ Date: 17 May 2026
 📜 4. Execution Commitment
   
     "Discipline, ownership, and consistency outweigh perfection."
-
-I commit to showing up every single day of this 90-day challenge, tracking my roadblocks honestly, and pushing code to build real-world operational confidence.
