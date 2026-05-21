@@ -77,23 +77,21 @@ I would use this when Installing stand-alone enterprise applications like Datado
 
   Hands-on task:
 
-    1. Find the largest log file in /var/log
+  1. Find the largest log file in /var/log
 
-    du -sh /var/log/* 2>/dev/null | sort -h | tail -5
+          du -sh /var/log/* 2>/dev/null | sort -h | tail -5
 
 <img width="606" height="203" alt="Screenshot 2026-05-21 at 2 02 20 PM" src="https://github.com/user-attachments/assets/47a96b0f-4a9d-4870-afbb-df53f8537b00" />
 
+  2. Look at a config file in /etc
 
-    2. Look at a config file in /etc
-
-    cat /etc/hostname
+          cat /etc/hostname
 
 <img width="349" height="90" alt="Screenshot 2026-05-21 at 2 02 49 PM" src="https://github.com/user-attachments/assets/a88e0562-40a9-4b1a-bc0e-89a970470b4d" />
 
+  3. Check your home directory
 
-    3. Check your home directory
-
-    ls -la ~
+          ls -la ~
 
 <img width="530" height="261" alt="Screenshot 2026-05-21 at 2 03 22 PM" src="https://github.com/user-attachments/assets/3bc39392-e330-4ed4-b25f-7027b1e80555" />
 
