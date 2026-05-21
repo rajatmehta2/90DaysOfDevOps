@@ -10,42 +10,42 @@ Part 1: Linux File System Hierarchy
 
 <img width="335" height="120" alt="Screenshot 2026-05-21 at 1 16 50 PM" src="https://github.com/user-attachments/assets/02f5aebf-1343-461b-8768-a8af35cc50cd" />
 
-    I would use this when I need to navigate to the absolute base of the system to locate top-level directories like /etc or /var.
+I would use this when I need to navigate to the absolute base of the system to locate top-level directories like /etc or /var.
 
 
     2. /home - The personal directories for all non-root, standard users to store documents, keys, and personal configurations.
 
 <img width="480" height="119" alt="Screenshot 2026-05-21 at 1 48 04 PM" src="https://github.com/user-attachments/assets/05aa5a68-1c4c-4ffe-a8f1-be7cebe26bb8" />
 
-    I would use this when I need to deploy user-specific SSH keys, check developer application files, or modify a specific user's .bashrc profile.
+I would use this when I need to deploy user-specific SSH keys, check developer application files, or modify a specific user's .bashrc profile.
 
 
     3. /root - The dedicated, protected home directory for the superuser (root account).
 
 <img width="551" height="89" alt="Screenshot 2026-05-21 at 1 49 51 PM" src="https://github.com/user-attachments/assets/982c5c46-af63-4085-9c97-7e9e077934a8" />
 
-    I would use this when I am logged in as root and need to store scripts or configuration keys meant exclusively for system administrator execution.
+I would use this when I am logged in as root and need to store scripts or configuration keys meant exclusively for system administrator execution.
 
 
     4. /etc - System-wide configuration files and startup scripts for applications and core services.
 
 <img width="495" height="204" alt="Screenshot 2026-05-21 at 1 51 11 PM" src="https://github.com/user-attachments/assets/5724414f-edb2-4770-9f5b-f0719e25240f" />
 
-    I would use this when I need to configure Nginx host files, modify server hostnames, or tweak network interface properties.
+I would use this when I need to configure Nginx host files, modify server hostnames, or tweak network interface properties.
 
 
     5. /var/log - The central repository for all system, kernel, and package execution log files.
 
 <img width="512" height="200" alt="Screenshot 2026-05-21 at 1 52 23 PM" src="https://github.com/user-attachments/assets/2ad07825-5854-4f61-8488-0579c8dc5a60" />
 
-    I would use this when An application drops or breaks, and I need to parse the runtime logs to diagnose what caused the failure.
+I would use this when An application drops or breaks, and I need to parse the runtime logs to diagnose what caused the failure.
 
 
     6. /tmp - Volatile, temporary files created by applications or system processes that are wiped clean upon machine reboot.
 
 <img width="307" height="88" alt="Screenshot 2026-05-21 at 1 53 28 PM" src="https://github.com/user-attachments/assets/6b5ed323-db3f-4b6a-9999-fad0b3b59224" />
 
-    I would use this when I am running a quick testing script, extracting a compressed archive temporarily, or staging raw files before installation.
+I would use this when I am running a quick testing script, extracting a compressed archive temporarily, or staging raw files before installation.
 
 
 
@@ -55,21 +55,21 @@ Part 1: Linux File System Hierarchy
 
 <img width="477" height="92" alt="Screenshot 2026-05-21 at 1 54 59 PM" src="https://github.com/user-attachments/assets/97bb3842-92d2-4532-9523-74743b741c0d" />
 
-    I would use this when Running primary, day-to-day command line utilities like ls, cp, or cat.
+I would use this when Running primary, day-to-day command line utilities like ls, cp, or cat.
 
 
     2. /usr/bin - The vast majority of standard executable programs and binaries intended for general users after the OS boots.
 
 <img width="479" height="155" alt="Screenshot 2026-05-21 at 1 57 28 PM" src="https://github.com/user-attachments/assets/822a8f96-7151-43f3-90d5-37859f1fbfeb" />
 
-    I would use this when Utilizing day-to-day administrative tools such as curl, git, or python3.
+I would use this when Utilizing day-to-day administrative tools such as curl, git, or python3.
 
 
     3. /opt - Add-on, third-party software packages that don't follow the native package manager file system conventions.
 
 <img width="303" height="90" alt="Screenshot 2026-05-21 at 1 57 58 PM" src="https://github.com/user-attachments/assets/9a4bfb58-5178-4699-ad81-faed736f9449" />
 
-    I would use this when Installing stand-alone enterprise applications like Datadog agents, AWS CLI tools, or proprietary databases.
+I would use this when Installing stand-alone enterprise applications like Datadog agents, AWS CLI tools, or proprietary databases.
 
 
 
