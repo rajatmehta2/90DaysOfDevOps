@@ -47,10 +47,8 @@ I would use this when An application drops or breaks, and I need to parse the ru
 
 I would use this when I am running a quick testing script, extracting a compressed archive temporarily, or staging raw files before installation.
 
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-  
   Additional Directories (Good to Know):
 
     1. /bin - Essential command binaries required for system booting and single-user recovery operations (often symlinked to /usr/bin).
