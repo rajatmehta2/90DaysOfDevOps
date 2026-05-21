@@ -93,18 +93,18 @@ Command 11: Native Service Error Logs
 
 Should the service degrade, encounter high latency, or drop active connections, execute the following emergency operations:
 
-     1. Graceful Worker Refresh Strategy: Avoid sudden service disruptions by executing a hot config validation and safe reload to drop dead sockets without dropping active users:
+1. Graceful Worker Refresh Strategy: Avoid sudden service disruptions by executing a hot config validation and safe reload to drop dead sockets without dropping active users:
 
           nginx -t && systemctl reload nginx
 
 <img width="754" height="143" alt="Screenshot 2026-05-21 at 12 49 43 PM" src="https://github.com/user-attachments/assets/2f8dd958-0b0b-4ae7-84c2-2e5c5b54c787" />
 
-     2. Examine Live Thread Blockages with strace: Track OS system calls in real-time to locate hanging worker tasks or slow I/O operations directly on an active worker process:
+2. Examine Live Thread Blockages with strace: Track OS system calls in real-time to locate hanging worker tasks or slow I/O operations directly on an active worker process:
 
           strace -p <worker_pid> -c -T
 
 <img width="638" height="519" alt="Screenshot 2026-05-21 at 12 54 34 PM" src="https://github.com/user-attachments/assets/d6dfe6c8-fa31-4648-ac0b-6d8baee85c53" />
 
-     3. Elevate Log Verbosity Levels: If connections are dropping silently, modify the main configuration (/etc/nginx/nginx.conf) error directive to capture deep application behavior data:
+3. Elevate Log Verbosity Levels: If connections are dropping silently, modify the main configuration (/etc/nginx/nginx.conf) error directive to capture deep application behavior data:
 
           error_log /var/log/nginx/error.log debug;
