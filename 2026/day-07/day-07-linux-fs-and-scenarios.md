@@ -8,7 +8,8 @@ Part 1: Linux File System Hierarchy
 
     1. / (root) - The top-level directory of the entire Linux filesystem hierarchy. Every single file, directory, and mounted device starts here.
 
-    <img width="590" height="701" alt="Screenshot 2026-05-21 at 1 46 06 PM" src="https://github.com/user-attachments/assets/0225b5f3-0b84-4adb-938c-b8e598948e44" />
+    <img width="335" height="120" alt="Screenshot 2026-05-21 at 1 16 50 PM" src="https://github.com/user-attachments/assets/02f5aebf-1343-461b-8768-a8af35cc50cd" />
+
 
     I would use this when I need to navigate to the absolute base of the system to locate top-level directories like /etc or /var.
 
