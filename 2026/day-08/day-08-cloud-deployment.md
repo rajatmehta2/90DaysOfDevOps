@@ -8,26 +8,32 @@ Part 1: Launch Cloud Instance & SSH Access
         
         1. Logged into the AWS Console and navigated to the EC2 Dashboard.
         2. Clicked on Launch Instance and configured the following:
-            - Name: "Day08-DevOps-Server"
-            - OS Images (AMI): "Ubuntu Server 22.04 LTS (HVM), SSD Volume Type" (Free tier eligible)
-            - Instance Type: "t2.micro"
-            - Key Pair: Created a new key pair named "day-08-key.pem" and downloaded it to the local machine.
+            - Name: "Rajat-Demo-Instance"
+            - OS Images (AMI): "Ubuntu Server 26.04 LTS (HVM), SSD Volume Type" (Free tier eligible)
+            - Instance Type: "t3.micro"
+            - Key Pair: Created a new key pair named "KEY_FILE_NAME.pem" and downloaded it to the local machine.
             - Network Settings:
                 - Allowed SSH traffic from Anywhere ("0.0.0.0/0").
                 - Allowed HTTP traffic from Anywhere ("0.0.0.0/0") for web access.
         3. Clicked Launch Instance to provision the cloud server.
 
+<img width="1914" height="201" alt="Screenshot 2026-05-21 at 6 02 00 PM" src="https://github.com/user-attachments/assets/1c8603a0-e970-4172-814a-99b81ce52dc8" />
+
+<img width="1625" height="261" alt="Screenshot 2026-05-21 at 6 07 09 PM" src="https://github.com/user-attachments/assets/7502291b-296b-4aee-8913-672795832ff8" />
+
     Step 2: Connect via SSH
 
-        Open a local terminal and navigate to the directory where the "day-08-key.pem" file was saved, then run the following commands:
+        Open a local terminal and navigate to the directory where the "KEY_FILE_NAME.pem" file was saved, then run the following commands:
 
             1. Set permissions for the private key (owner read-only):
                 
-                chmod 400 day-08-key.pem
+                chmod 400 KEY_FILE_NAME.pem
             
             2. Connect to the EC2 instance via SSH:
             
-                ssh -i "day-08-key.pem" ubuntu@54.210.85.112
+                ssh -i "KEY_FILE_NAME.pem" ubuntu@YOUR_INSTANCE_PUBLIC_IP_OR_DNS
+
+<img width="849" height="580" alt="Screenshot 2026-05-21 at 6 03 03 PM" src="https://github.com/user-attachments/assets/03840bc1-61be-4d2a-ae40-652cd07abed5" />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -54,13 +60,19 @@ Part 2: Install Docker & Nginx
             
             sudo apt install nginx -y
 
+<img width="1908" height="864" alt="Screenshot 2026-05-21 at 6 05 53 PM" src="https://github.com/user-attachments/assets/eb74d0cb-fe07-4e6b-99c4-4115096aabd4" />
+
         3. Verify Nginx is running
         
             sudo systemctl status nginx
 
+<img width="1180" height="460" alt="Screenshot 2026-05-21 at 6 12 17 PM" src="https://github.com/user-attachments/assets/90c2abb1-026d-41b1-a499-de89c2c07338" />
+
         4. Verify Docker is running:
         
             docker --version
+
+<img width="336" height="24" alt="Screenshot 2026-05-21 at 6 44 19 PM" src="https://github.com/user-attachments/assets/5a6485b0-fbbc-44e9-8c51-b0dbbe5ccfaa" />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -74,6 +86,8 @@ Part 3: Security Group Configuration
 
         curl -I <YOUR INSTANCE PUBLIC IP>
 
+<img width="1086" height="318" alt="Screenshot 2026-05-21 at 6 08 41 PM" src="https://github.com/user-attachments/assets/6fd7f821-1d05-4c73-a890-fc35a8af1bcb" />
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Part 4: Extract Nginx Logs
@@ -83,6 +97,8 @@ Part 4: Extract Nginx Logs
         Monitor the incoming requests to Nginx in real-time.
 
             tail -f /var/log/nginx/access.log
+
+<img width="1893" height="161" alt="Screenshot 2026-05-21 at 6 45 27 PM" src="https://github.com/user-attachments/assets/8679dd46-be10-47bc-9ff4-d48a3067885a" />
 
     2: Save Logs to File
 
@@ -94,13 +110,17 @@ Part 4: Extract Nginx Logs
             
             cat ~/nginx-logs.txt
 
+<img width="1893" height="173" alt="Screenshot 2026-05-21 at 6 47 48 PM" src="https://github.com/user-attachments/assets/d5c63c5f-9906-4284-aa40-2faef378fa83" />
+
     3: Download Log File to Your Local Machine
     
         From a new terminal window on your local machine, run the "scp" command to download the log file:
 
         Using SSH Private Key
 
-            scp -i day-08-key.pem ubuntu@54.210.85.112:~/nginx-logs.txt .
+            scp -i KEY_FILE_NAME.pem ubuntu@YOUR_INSTANCE_PUBLIC_IP_OR_DNS:~/nginx-logs.txt .
+
+<img width="1868" height="203" alt="Screenshot 2026-05-21 at 6 51 07 PM" src="https://github.com/user-attachments/assets/df6409e8-325c-47d5-839d-da478375fd56" />
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -108,7 +128,7 @@ Commands Used
 
 | Command | Purpose |
 |---------|---------|
-| "chmod 400 day-08-key.pem" | Restricts access permissions of private key file |
+| "chmod 400 KEY_FILE_NAME.pem" | Restricts access permissions of private key file |
 | "ssh -i <key> ubuntu@<ip>" | Establishes secure connection to cloud server |
 | "sudo apt update && sudo apt upgrade -y" | Refreshes and upgrades system packages |
 | "sudo apt install docker.io nginx -y" | Installs Docker and Nginx packages |
@@ -126,10 +146,10 @@ Challenges Faced
 - Cause: The security group rules only allowed port 22 (SSH) and did not expose port 80 (HTTP) to public traffic.
 - Resolution: Updated the Inbound Security Group rules in the AWS Console to add a rule allowing HTTP traffic on port 80 from "0.0.0.0/0" (anywhere).
 
-2. Permissions issue with Private Key ("day-08-key.pem")
+2. Permissions issue with Private Key ("KEY_FILE_NAME.pem")
 - Problem: SSH connection failed with warning: "UNPROTECTED PRIVATE KEY FILE!".
 - Cause: Private key was created with default permissions ("644"), which is too open.
-- Resolution: Ran "chmod 400 day-08-key.pem" to restrict access permissions to the owner only.
+- Resolution: Ran "chmod 400 KEY_FILE_NAME.pem" to restrict access permissions to the owner only.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
