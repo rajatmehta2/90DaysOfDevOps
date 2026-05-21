@@ -49,6 +49,8 @@ I would use this when I am running a quick testing script, extracting a compress
 
 
 
+
+  
   Additional Directories (Good to Know):
 
     1. /bin - Essential command binaries required for system booting and single-user recovery operations (often symlinked to /usr/bin).
