@@ -105,19 +105,28 @@ Part 2: Scenario-Based Practice
 
   Scenario 1: Service Not Starting
 
-    Step 1: Check service status
-    Command: systemctl status myapp
-    Output:
+Step 1: Check service status
+    
+    Command: systemctl status nginx
+
+<img width="1393" height="524" alt="Screenshot 2026-05-21 at 2 28 38 PM" src="https://github.com/user-attachments/assets/3d0b2fcd-ea45-44de-bd9e-616f71959d3d" />
+
     Why: This shows the immediate state of the service (active, dead, or crashed) and pulls the last few error trace strings from systemd.
 
-    Step 2: Check latest 50 logs
-    Command: journalctl -u myapp -n 50 --no-pager
-    Output:
+Step 2: Check latest 50 logs
+
+    Command: journalctl -u nginx -n 50 --no-pager
+
+<img width="1377" height="236" alt="Screenshot 2026-05-21 at 2 32 24 PM" src="https://github.com/user-attachments/assets/d03b608c-15f3-46de-929d-6176718446b1" />
+
     Why: This pulls the last 50 detailed log messages specific to the application unit, revealing code syntax bugs or database connection drop errors.
 
-    Step 3: Check if service is enabled on boot
-    Command: systemctl is-enabled myapp
-    Output:
+Step 3: Check if service is enabled on boot
+
+    Command: systemctl is-enabled nginx
+
+<img width="663" height="68" alt="Screenshot 2026-05-21 at 2 33 31 PM" src="https://github.com/user-attachments/assets/134134b7-e987-461e-a7d5-88285c1f7f21" />
+
     Why: This verifies whether the system is set to automatically start this process upon server initialization.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -126,47 +135,74 @@ Part 2: Scenario-Based Practice
 
     1. Run top or htop to visualize continuous system resource consumption.
 
+    top
+
+<img width="1170" height="358" alt="Screenshot 2026-05-21 at 2 37 06 PM" src="https://github.com/user-attachments/assets/1de164b8-9683-4a1a-badd-96ba317f65ef" />
+
+    htop
+
+<img width="1179" height="743" alt="Screenshot 2026-05-21 at 2 37 35 PM" src="https://github.com/user-attachments/assets/8d05ec57-9992-406f-8f97-a617bfce5919" />
+
     2. In top, press P to automatically sort your active processes by descending CPU usage percentage.
 
     3. To view an instant snapshot without interactive navigation, run this below command:
+
+<img width="734" height="203" alt="Screenshot 2026-05-21 at 2 36 25 PM" src="https://github.com/user-attachments/assets/7c964778-0423-49f5-acf5-4f7b55090147" />
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
   Scenario 3: Finding Service Logs
 
-    Step 1: Status View
+Step 1: Status View
+
     Command: systemctl status docker
-    Output:
+    
+<img width="1435" height="463" alt="Screenshot 2026-05-21 at 2 39 29 PM" src="https://github.com/user-attachments/assets/e0914fe8-3fc3-4cf7-bef9-f6e5f34391a7" />
+
     Why: Provides an operational summary along with file descriptors and the most recent logging outputs.
 
-    Step 2: Historical Investigation
+Step 2: Historical Investigation
+
     Command: journalctl -u docker -n 50
-    Output:
+
+<img width="1427" height="237" alt="Screenshot 2026-05-21 at 2 40 42 PM" src="https://github.com/user-attachments/assets/72df02b8-0dae-4a52-90ae-d4874779b6f6" />
+
     Why: Displays exactly 50 log records from the journald index for faster analysis.
 
-    Step 3: Live Streaming Debugging
+Step 3: Live Streaming Debugging
+
     Command: journalctl -u docker -f
-    Output:
+
+<img width="1429" height="319" alt="Screenshot 2026-05-21 at 2 41 26 PM" src="https://github.com/user-attachments/assets/2855bc97-971f-4fbd-ad7b-b8301e3f4b04" />
+
     Why: This mirrors standard tail -f mechanics, streaming runtime warnings directly onto your terminal shell as they trigger.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
   Scenario 4: File Permissions Issue
 
-    Step 1: Check current permissions
+Step 1: Check current permissions
+
     Command: ls -l /home/user/backup.sh
-    Output:
+
+<img width="514" height="182" alt="Screenshot 2026-05-21 at 2 43 16 PM" src="https://github.com/user-attachments/assets/c6c2d122-33a2-4d0b-bcec-15dae5029614" />
+
     Why: Notice that the string reads -rw-r--r--. There is no execution (x) flag present across user, group, or global permissions matrices.
 
-    Step 2: Add execute permission
-    Command: chmod +x /home/user/backup.sh
-    Output:
+Step 2: Add execute permission
 
-    Step 3: Verify execution matrix updates
+    Command: chmod +x /home/user/backup.sh
+
+<img width="517" height="175" alt="Screenshot 2026-05-21 at 2 44 09 PM" src="https://github.com/user-attachments/assets/26d82228-48b8-4737-a9c7-38e5ad01a7b1" />
+
+Step 3: Verify execution matrix updates
+
     Command: ls -l /home/user/backup.sh
-    Output:
+
+<img width="523" height="152" alt="Screenshot 2026-05-21 at 2 44 36 PM" src="https://github.com/user-attachments/assets/3bcaf02c-e6ca-4e03-b6d0-d7a7dca7874a" />
+
     Why: The flag successfully transformed to -rwxr-xr-x. The file is now executable.
 
-    Step 4: Execute the script safely
+Step 4: Execute the script safely
+
     Command: ./backup.sh
-    Output:
