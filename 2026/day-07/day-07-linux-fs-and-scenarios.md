@@ -4,6 +4,8 @@ Date: 23 May 2026
 
 Part 1: Linux File System Hierarchy
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
   Core Directories (Must Know):
 
     1. / (root) - The top-level directory of the entire Linux filesystem hierarchy. Every single file, directory, and mounted device starts here.
@@ -71,7 +73,7 @@ I would use this when Utilizing day-to-day administrative tools such as curl, gi
 
 I would use this when Installing stand-alone enterprise applications like Datadog agents, AWS CLI tools, or proprietary databases.
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 
   Hands-on task:
 
@@ -95,9 +97,11 @@ I would use this when Installing stand-alone enterprise applications like Datado
 
 <img width="530" height="261" alt="Screenshot 2026-05-21 at 2 03 22 PM" src="https://github.com/user-attachments/assets/3bc39392-e330-4ed4-b25f-7027b1e80555" />
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 Part 2: Scenario-Based Practice
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
   Scenario 1: Service Not Starting
 
@@ -116,6 +120,8 @@ Part 2: Scenario-Based Practice
     Output:
     Why: This verifies whether the system is set to automatically start this process upon server initialization.
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
   Scenario 2: High CPU Usage
 
     1. Run top or htop to visualize continuous system resource consumption.
@@ -123,6 +129,8 @@ Part 2: Scenario-Based Practice
     2. In top, press P to automatically sort your active processes by descending CPU usage percentage.
 
     3. To view an instant snapshot without interactive navigation, run this below command:
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
   Scenario 3: Finding Service Logs
 
@@ -140,6 +148,8 @@ Part 2: Scenario-Based Practice
     Command: journalctl -u docker -f
     Output:
     Why: This mirrors standard tail -f mechanics, streaming runtime warnings directly onto your terminal shell as they trigger.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
   Scenario 4: File Permissions Issue
 
