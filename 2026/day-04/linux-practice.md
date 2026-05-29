@@ -1,51 +1,209 @@
-Date: 20 May 2026
+# 🐧 Day 04: Linux Practice — Processes, Services, and Log Triage
 
-🐧 Day 04: Linux Practice — Processes and Services
+> **"In Cloud engineering, servers are living environments. Knowing how to query active processes, audit systemd services, and isolate log failures is the foundation of high-availability DevOps."**
 
-  🏔️ 1. Core Milestones (Executed Commands Log)
+Welcome to Day 04 of the **90 Days of DevOps** challenge! Today's session is a hands-on lab focused on mastering Linux processes, systemd services, and telemetry logs. This document serves as a production-grade practice log and troubleshooting guide, recording real-world command execution and triage flows.
 
-    📈 Process Checks
-      
-      🔍 Command 1: ps aux | grep docker
-      Detailed Explanation: This command dumps a snapshot of every running process on the system (ps aux) and pipes the output into grep to filter out lines matching "docker". It allows me to confirm if the primary Docker daemon engine is actively consuming memory or CPU in user space.
-      Expected Output Pattern: Shows details like root, PID, %CPU, %MEM, VSZ, RSS, and the command path /usr/bin/dockerd.
+---
 
-      ⚡ Command 2: pgrep -l dockerd
-      Detailed Explanation: Looks up the specific Process ID (PID) belonging to the named daemon process (dockerd) and lists it alongside the process name (-l). It provides a clean, automated way to verify process existence without processing huge system-wide data streams.
-      Expected Output Pattern: 1422 dockerd
+## ⚡ Quick Scan Terminal Overview
+Below is a high-fidelity visual snapshot of the diagnostics session executed in a production terminal interface:
 
-    ⚙️ Service Checks
-      
-      🏥 Command 3: systemctl status docker
-      Detailed Explanation: Queries systemd (the main system initialization daemon) to inspect the precise configuration status, runtime state, memory footprint, and recent log snippets of the docker.service unit.
-      Expected Output Pattern: Displays Active: active (running) in green text along with the main PID, task counts, and system group ownership metadata.
+![Terminal Diagnostics](assets/linux_practice_terminal.png)
 
-      📋 Command 4: systemctl list-units --type=service --state=active
-      Detailed Explanation: Queries the system manager to list all dynamically active application units filtered strictly by the service type. This is vital to understand what other background dependencies are running alongside our target infrastructure.
-      Expected Output Pattern: A clean table layout displaying columns for UNIT, LOAD, ACTIVE, SUB, and a short description of each active system service daemon.
+---
 
-    📑 Log Checks
-      
-      🗃️ Command 5: journalctl -u docker -n 50 --no-pager
-      Detailed Explanation: Queries the centralized systemd journal logs, filtering strictly for logs produced by the docker unit (-u docker). It fetches exactly the most recent 50 lines (-n 50) and dumps them directly to the screen without forcing interactive terminal paging mode (--no-pager).
-      Expected Output Pattern: Timestamps followed by the hostname, dockerd[PID], and runtime logs mapping bridge network allocations or container layer initializations.
+## 📂 Table of Contents
+1. [📊 1. Process Diagnostics (Commands 1 & 2)](#-1-process-diagnostics-commands-1--2)
+2. [⚙️ 2. Systemd Service Audit (Commands 3 & 4)](#-2-systemd-service-audit-commands-3--4)
+3. [📑 3. Centralized Log Inspection (Commands 5 & 6)](#-3-centralized-log-inspection-commands-5--6)
+4. [🛠️ 4. Mini Triage & Troubleshooting Lifecycle](#-4-mini-triage--troubleshooting-lifecycle)
+5. [📜 5. Learn in Public & Commitment](#-5-learn-in-public--commitment)
 
-      📊 Command 6: tail -n 50 /var/log/syslog
-      Detailed Explanation: Streams exactly the last 50 lines from the global operating system system log file (/var/log/syslog). This helps correlate internal Docker subsystem errors with broader operating system changes, kernel alerts, or resource starvation issues.
-      Expected Output Pattern: General OS system logs, cron tasks, auth events, and overlapping daemon resource allocations.
+---
 
-  🛠️ 2. Mini Troubleshooting Steps
-  
-    When tracking down an unhealthly application or an unexpected service failure, I use this explicit triage routine:
-    
-      1. 📌 Step 1 (Process Evaluation): Check if the process table entry exists using pgrep or ps aux. If the process is absent or stuck in a Zombie/Uninterruptible state, the application engine has broken down completely.
-      
-      2. 📌 Step 2 (Service Lifecycle Verification): Run systemctl status to evaluate the exit code or check if systemd is caught in an infinite crash-restart loop.
-      
-      3. 📌 Step 3 (Log Deep-Dive Analysis): Isolate the root cause by querying journalctl -u and trailing the system logs to identify explicit infrastructure errors (e.g., storage exhaustion, bad configs, permission blocks).
-      
-      4. 📌 Step 4 (Remediation & Recovery): Adjust configurations, verify system constraints, and use systemctl restart to cleanly restore container workloads and application availability.
+## 📊 1. Process Diagnostics (Commands 1 & 2)
 
-  📜 3. Execution Commitment
-    
-    "Discipline, ownership, and consistency outweigh perfection. Hands-on practice builds absolute terminal confidence."
+Process diagnostics allow an engineer to audit active resource consumption, locate orphaned tasks, and verify that the target application binaries are running in user space.
+
+| Command | Basic Syntax | DevOps Use Case | Operational Context & Tips |
+| :--- | :--- | :--- | :--- |
+| **`ps`** | `ps aux \| grep docker` | Dumps a snapshot of all running processes and filters for Docker components. | `aux` displays processes for all users (`a`), lists process owners (`u`), and shows detached processes (`x`). |
+| **`pgrep`** | `pgrep -l dockerd` | Quickly lookup Process IDs (PIDs) by service name. | The `-l` flag lists the process name alongside the PID, avoiding manual regex parsing. |
+
+### 💻 Process Command Examples & Expected Output
+
+#### A. Comprehensive Process Audit (`ps aux | grep docker`)
+Used to check detailed resource allocation (%CPU, %MEM), owner permissions, and startup flags for Docker processes.
+```bash
+ps aux | grep docker
+```
+**Example Output:**
+```text
+root      1104  0.2  1.4 1452308 116240 ?      Ssl  10:30   0:14 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root      1106  0.1  0.5  712400  41200 ?      Sl   10:30   0:08 docker-containerd --config /var/run/docker/containerd/containerd.toml
+sysadmin  2489  0.0  0.0  14224    920 pts/0    S+   11:15   0:00 grep --color=auto docker
+```
+
+#### B. Quick Process ID Lookup (`pgrep -l dockerd`)
+Provides a rapid check of daemon health without filling up the terminal screen.
+```bash
+pgrep -l dockerd
+```
+**Example Output:**
+```text
+1104 dockerd
+```
+
+---
+
+## ⚙️ 2. Systemd Service Audit (Commands 3 & 4)
+
+Modern Linux distributions rely on `systemd` to manage background daemons. Use these commands to inspect service statuses, load configurations, and monitor active dependencies.
+
+| Command | Basic Syntax | DevOps Use Case | Operational Context & Tips |
+| :--- | :--- | :--- | :--- |
+| **`systemctl status`** | `systemctl status docker` | Queries systemd to inspect configuration status, memory footprint, and recent logs. | Displays active state colors (e.g., green for `active (running)`) and lists the control group process tree. |
+| **`systemctl list-units`** | `systemctl list-units --type=service --state=active` | Lists all active service units running on the host. | Extremely useful during initial server boot audits to identify unexpected services. |
+
+### ⚙️ Service Command Examples & Expected Output
+
+#### A. Service Status Inspection (`systemctl status docker`)
+Verifies the operational state, configuration path, uptime, and main PID of the Docker engine.
+```bash
+systemctl status docker
+```
+**Example Output:**
+```text
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2026-05-30 10:30:15 UTC; 45min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1104 (dockerd)
+      Tasks: 16 (limit: 9345)
+     Memory: 113.8M
+        CPU: 14.2s
+     CGroup: /system.slice/docker.service
+             └─1104 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+```
+
+#### B. Listing Active System Services (`systemctl list-units --type=service --state=active`)
+Audits all running services to verify systemic dependency alignment.
+```bash
+systemctl list-units --type=service --state=active
+```
+**Example Output:**
+```text
+UNIT                         LOAD   ACTIVE SUB     DESCRIPTION
+cron.service                 loaded active running Regular background program processing daemon
+dbus.service                 loaded active running D-Bus System Message Bus
+docker.service               loaded active running Docker Application Container Engine
+ssh.service                  loaded active running OpenSSH Daemon
+systemd-journald.service     loaded active running Journal Service
+systemd-logind.service       loaded active running User Login Service
+
+LOAD   = Reflects whether the unit definition was properly loaded into memory.
+ACTIVE = The high-level unit state (active, inactive, failed, etc.).
+SUB    = The low-level unit activation state (running, exited, dead).
+```
+
+---
+
+## 📑 3. Centralized Log Inspection (Commands 5 & 6)
+
+When services fail, telemetry logs are the single source of truth. Use these commands to search, filter, and stream event outputs directly to stdout.
+
+| Command | Basic Syntax | DevOps Use Case | Operational Context & Tips |
+| :--- | :--- | :--- | :--- |
+| **`journalctl`** | `journalctl -u docker -n 50 --no-pager` | Queries centralized systemd logs for a specific service. | The `--no-pager` flag dumps lines directly to the standard output, bypassing interactive scrolling utilities. |
+| **`tail`** | `tail -n 50 /var/log/syslog` | Retrieves the latest entries from the global system log file. | Use `tail -f` to stream incoming logging metrics in real time during testing. |
+
+### 📑 Log Analysis Command Examples & Expected Output
+
+#### A. Inspecting Service-Specific Logs (`journalctl -u docker -n 50 --no-pager`)
+Extracts the latest runtime occurrences from Docker's systemd journal database.
+```bash
+journalctl -u docker -n 3 --no-pager
+```
+**Example Output:**
+```text
+May 30 10:30:15 ubuntu-server dockerd[1104]: time="2026-05-30T10:30:15.184201082Z" level=info msg="Starting up"
+May 30 10:30:16 ubuntu-server dockerd[1104]: time="2026-05-30T10:30:16.429012921Z" level=info msg="Default bridge (docker0) is created with IP address 172.17.0.1/16"
+May 30 10:30:16 ubuntu-server dockerd[1104]: time="2026-05-30T10:30:16.890123910Z" level=info msg="Daemon has completed initialization"
+```
+
+#### B. Reading the Global Operating System Log (`tail -n 50 /var/log/syslog`)
+Reviews system-wide signals, kernel logs, and cron events to correlate host failures.
+```bash
+tail -n 3 /var/log/syslog
+```
+**Example Output:**
+```text
+May 30 11:00:01 ubuntu-server CRON[3214]: (root) CMD (command -v debian-sa1 && debian-sa1 1 1)
+May 30 11:10:22 ubuntu-server systemd[1]: Starting Daily apt upgrade and clean activities...
+May 30 11:10:25 ubuntu-server systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
+```
+
+---
+
+## 🛠️ 4. Mini Triage & Troubleshooting Lifecycle
+
+When an active production alert signals that a backend microservice is unhealthy or down, execute this standard 4-stage operational triage routine to restore availability:
+
+```mermaid
+graph TD
+    A[Production Incident Triggered] --> B[1. Process Evaluation]
+    B -->|Process Missing / Zombie| C[Application Crashed / Stuck]
+    B -->|Process Running| D[2. Service Lifecycle Audit]
+    C --> E[3. Log Deep-Dive Analysis]
+    D -->|State Failed / Restarting| E
+    D -->|State Active & Running| F[Check Network / Configurations]
+    E -->|Isolate Root Cause| G[4. Remediation & Recovery]
+    F --> G
+    G --> H[Restart Service & Verify Health]
+    H --> I[Incident Resolved]
+```
+
+### 📋 Operational Step Details:
+
+1. **📌 Step 1: Process Evaluation**
+   * **Action:** Check if the process table entry exists.
+   * **Commands:** `pgrep -l <service>` or `ps aux | grep <service>`.
+   * **Diagnostics:** If the process is completely absent or marked as a Zombie (`Z`), the application has crashed or failed to boot.
+
+2. **📌 Step 2: Service Lifecycle Verification**
+   * **Action:** Evaluate systemd unit state.
+   * **Commands:** `systemctl status <service>`.
+   * **Diagnostics:** Identify if the unit is in a `failed` state, has crashed with a specific exit code, or is trapped in a crash-loop backoff.
+
+3. **📌 Step 3: Log Deep-Dive Analysis**
+   * **Action:** Review runtime telemetry.
+   * **Commands:** `journalctl -u <service> -n 100 --no-pager` and `tail -f /var/log/syslog`.
+   * **Diagnostics:** Scan for explicit runtime exceptions (e.g., database connection timeout, disk out-of-space, bad configuration syntax, or permissions issues).
+
+4. **📌 Step 4: Remediation & Recovery**
+   * **Action:** Apply fixes and restore normal service operation.
+   * **Commands:** Apply configuration changes, free system resources, then execute:
+     ```bash
+     sudo systemctl restart <service>
+     ```
+   * **Verification:** Re-run `systemctl status <service>` to ensure the service stays in `active (running)`.
+
+---
+
+## 📜 5. Learn in Public & Commitment
+
+> **"Discipline, ownership, and consistency outweigh perfection. Hands-on practice builds absolute terminal confidence."**
+
+### 🎓 Connect & Share Progress
+Follow my Day 04 journey on LinkedIn. Together we are building solid infrastructure muscle memory:
+
+* **Post Focus:** Documenting hands-on Linux practice, systemd service inspections, and logs triage.
+* **Hashtags:**
+  * `#90DaysOfDevOps`
+  * `#DevOpsKaJosh`
+  * `#TrainWithShubham`
+
+---
+**TrainWithShubham** | Day 04 Complete 🚀
