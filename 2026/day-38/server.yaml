@@ -1,0 +1,31 @@
+# Day 38 - YAML Basics Challenge
+# File: server.yaml
+# Description: Multi-tier infrastructure definition with nested objects and multi-line strings
+
+server:
+  name: prod-app-server-01
+  ip: 192.168.1.50
+  port: 8080
+
+database:
+  host: db.prod.internal
+  name: customers_db
+  credentials:
+    user: db_admin
+    password: SuperSecretPassword2026
+
+# Task 4: Multi-line Strings
+# 1. Literal Block Style (|) - Preserves all newlines and trailing spaces
+startup_script: |
+  #!/bin/bash
+  echo "Initializing server startup..."
+  sudo apt-get update -y
+  sudo apt-get install -y nginx docker.io
+  sudo systemctl enable --now nginx
+  echo "Initialization complete!"
+
+# 2. Folded Block Style (>) - Folds newlines into single spaces
+shutdown_alert_message: >
+  Warning: The database server is initiating a scheduled maintenance shutdown.
+  All active sessions will be terminated in 5 minutes.
+  Please save your work to prevent data loss.

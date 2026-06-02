@@ -1,0 +1,34 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: wp-mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - wp-mysql-data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wp-app
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${DB_NAME}
+    volumes:
+      - wp-app-data:/var/www/html
+    depends_on:
+      - db
+
+volumes:
+  wp-mysql-data:
+    name: wp-mysql-data
+  wp-app-data:
+    name: wp-app-data

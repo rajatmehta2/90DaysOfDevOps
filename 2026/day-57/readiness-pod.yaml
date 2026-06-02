@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: readiness-pod
+  labels:
+    app: readiness-demo
+spec:
+  containers:
+  - name: web-container
+    image: nginx:1.25.4-alpine
+    ports:
+    - containerPort: 80
+    readinessProbe:
+      httpGet:
+        path: /
+        port: 80
+      initialDelaySeconds: 5
+      periodSeconds: 5
+      failureThreshold: 3
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: readiness-svc
+spec:
+  selector:
+    app: readiness-demo
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80

@@ -1,0 +1,10 @@
+===================================================
+🐳 Day 31 Dockerfile Instructions Demo Lab
+===================================================
+Active DevOps Candidate: rajatmehta2
+Target Topic: Custom Build Blueprints
+Operating System: macOS arm64 Host / Alpine container
+Instructions Tested: FROM, RUN, COPY, WORKDIR, EXPOSE, CMD
+===================================================
+This configuration file demonstrates how multi-step layers 
+and caching mechanisms operate under the hood in BuildKit.

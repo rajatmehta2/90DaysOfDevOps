@@ -1,0 +1,32 @@
+# custom-values.yaml - Overrides for bitnami/nginx Helm Chart
+# Day 59: Helm - Kubernetes Package Manager
+
+# 1. Scaling Configuration
+replicaCount: 3
+
+# 2. Service Configuration
+service:
+  type: NodePort
+  ports:
+    http: 80
+
+# 3. Resource Management
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+# 4. Ingress Configuration (Disabled by default, but ready for production)
+ingress:
+  enabled: false
+  hostname: nginx.local
+  path: /
+  annotations: {}
+
+# 5. Pod Disruption Budget (Optional but nice to define)
+pdb:
+  create: true
+  minAvailable: 2

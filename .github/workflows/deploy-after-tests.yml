@@ -1,0 +1,36 @@
+name: Post-Test CD Deployment
+
+on:
+  workflow_run:
+    workflows: ["Run Tests"]
+    types:
+      - completed
+
+jobs:
+  deploy-pipeline:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Workflow Metadata
+        run: |
+          echo "🏁 Triggered by Workflow: ${{ github.event.workflow_run.name }}"
+          echo "📊 Parent Execution Status: ${{ github.event.workflow_run.conclusion }}"
+
+      - name: Check Parent Build Success
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        run: |
+          echo "=================================================="
+          echo "🚀 Parent tests successfully completed! Starting CD pipeline..."
+          echo "🐳 Pulling stable Docker builds..."
+          echo "☸️ Performing Rolling Update to Kubernetes cluster..."
+          echo "✅ SUCCESS: Environment deployed successfully!"
+          echo "=================================================="
+
+      - name: Handle Parent Build Failure
+        if: ${{ github.event.workflow_run.conclusion != 'success' }}
+        run: |
+          echo "=================================================="
+          echo "❌ CRITICAL: Parent test run failed or aborted!"
+          echo "⚠️ Deployment is blocked. Exiting workflow run."
+          echo "=================================================="
+          exit 1

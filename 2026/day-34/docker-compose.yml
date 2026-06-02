@@ -1,0 +1,72 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: devops-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - backend-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    labels:
+      project: "90days-devops"
+      day: "34"
+      tier: "database"
+      owner: "rajatmehta2"
+
+  redis:
+    image: redis:7.2-alpine
+    container_name: devops-redis
+    restart: always
+    networks:
+      - backend-network
+    labels:
+      project: "90days-devops"
+      day: "34"
+      tier: "cache"
+      owner: "rajatmehta2"
+
+  web:
+    build: ./app
+    container_name: devops-web-app
+    restart: on-failure
+    ports:
+      - "5000:5000"
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      DB_HOST: db
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      PORT: 5000
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - frontend-network
+      - backend-network
+    labels:
+      project: "90days-devops"
+      day: "34"
+      tier: "frontend"
+      owner: "rajatmehta2"
+
+networks:
+  frontend-network:
+    name: frontend-network
+  backend-network:
+    name: backend-network
+
+volumes:
+  postgres_data:
+    name: postgres_data

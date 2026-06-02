@@ -1,0 +1,20 @@
+# Dockerfile.single
+# Single-stage build for Go application (Large footprint)
+# Used for comparison during Day 35 - Multi-stage builds lab
+
+FROM golang:1.22.3
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy application source code
+COPY main.go .
+
+# Build the Go application
+RUN go build -o myapp main.go
+
+# Expose web server port
+EXPOSE 8080
+
+# Execute binary
+CMD ["./myapp"]

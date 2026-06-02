@@ -1,0 +1,20 @@
+# Day 38 - YAML Basics Challenge
+# File: person.yaml
+# Description: DevOps Professional Profile using YAML Key-Value Pairs and Lists
+
+name: Rajat Mehta
+role: DevOps Engineer
+experience_years: 3
+learning: true
+
+# Task 2: Lists in YAML
+# Block format (Sequence of items)
+tools:
+  - Docker
+  - Kubernetes
+  - Jenkins
+  - Terraform
+  - Linux
+
+# Flow/Inline format (JSON-style array)
+hobbies: [Writing Tech Blogs, Orchestrating Microservices, Automating Pipelines]

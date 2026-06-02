@@ -1,0 +1,11 @@
+# Ignore node modules dependencies
+node_modules/
+
+# Ignore local git control configuration
+.git/
+
+# Ignore documentation notes files
+*.md
+
+# Ignore secret environment parameters
+.env

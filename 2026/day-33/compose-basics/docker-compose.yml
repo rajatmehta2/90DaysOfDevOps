@@ -1,0 +1,6 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: nginx-compose
+    ports:
+      - "8080:80"

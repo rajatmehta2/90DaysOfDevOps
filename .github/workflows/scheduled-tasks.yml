@@ -1,0 +1,38 @@
+name: Scheduled Health Monitor
+
+on:
+  schedule:
+    - cron: '30 2 * * 1'   # Every Monday at 02:30 AM UTC
+    - cron: '0 */6 * * *'  # Every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+  workflow_dispatch:        # Enable manual executions
+
+jobs:
+  health-check:
+    name: API & Platform Health Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Cron Trigger Context
+        run: |
+          echo "=================================================="
+          echo "🔔 HEALTH CHECK WORKFLOW TRIGGERED"
+          echo "📅 Timestamp     : $(date -u) UTC"
+          echo "⚡ Event Trigger : ${{ github.event_name }}"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "⏰ Triggered by Schedule (Cron Expression): ${{ github.event.schedule }}"
+          else
+            echo "👤 Triggered Manually via Workflow Dispatch"
+          fi
+          echo "=================================================="
+
+      - name: Execute Endpoint Health Check
+        run: |
+          echo "📡 Testing public endpoint connectivity..."
+          RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://httpbin.org/status/200)
+          echo "👉 Server returned response status: $RESPONSE_CODE"
+          
+          if [ "$RESPONSE_CODE" -eq 200 ]; then
+            echo "✅ SUCCESS: Endpoint is active and returning healthy 200 status!"
+          else
+            echo "❌ CRITICAL: Endpoint returned unhealthy status code: $RESPONSE_CODE"
+            exit 1
+          fi

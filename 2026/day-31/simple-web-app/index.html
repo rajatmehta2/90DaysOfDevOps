@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 31 DevOps Web App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b 0%, #0f172a 100%);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Glassmorphism card dashboard */
+        .dashboard {
+            background: rgba(30, 41, 59, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 3rem;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        /* Subtle glowing ambient pulse */
+        .dashboard::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+            border-radius: 26px;
+            z-index: -1;
+            opacity: 0.15;
+            filter: blur(10px);
+        }
+
+        .icon-wrapper {
+            background: rgba(56, 189, 248, 0.1);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            animation: pulse 3s infinite ease-in-out;
+        }
+
+        .icon-wrapper svg {
+            width: 40px;
+            height: 40px;
+            fill: #38bdf8;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .tag-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: rgba(56, 189, 248, 0.08);
+            border-color: rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+            transform: translateY(-2px);
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 1.5rem;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.2);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px 5px rgba(56, 189, 248, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="icon-wrapper">
+            <!-- Docker Whale simple SVG -->
+            <svg viewBox="0 0 24 24">
+                <path d="M19.14,12.94C19.7,12.56 20,12 20,11.23C20,9.58 18.66,8.24 17,8.24C16.8,8.24 16.61,8.26 16.42,8.3C15.8,5.88 13.62,4.09 11,4.09C8.38,4.09 6.2,5.88 5.58,8.3C5.39,8.26 5.2,8.24 5,8.24C3.34,8.24 2,9.58 2,11.23C2,12 2.3,12.56 2.86,12.94C2.3,13.31 2,13.88 2,14.65C2,16.3 3.34,17.64 5,17.64C5.2,17.64 5.39,17.62 5.58,17.58C6.2,20 8.38,21.79 11,21.79C13.62,21.79 15.8,20 16.42,17.58C16.61,17.62 16.8,17.64 17,17.64C18.66,17.64 20,16.3 20,14.65C20,13.88 19.7,13.31 19.14,12.94M17,16.64A2,2 0 0,1 15,14.64A2,2 0 0,1 17,12.64A2,2 0 0,1 19,14.64A2,2 0 0,1 17,16.64M7,16.64A2,2 0 0,1 5,14.64A2,2 0 0,1 7,12.64A2,2 0 0,1 9,14.64A2,2 0 0,1 7,16.64Z" />
+            </svg>
+        </div>
+        <h1>🐳 Nginx Alpine Web App</h1>
+        <p>This static HTML web application is running inside a lightweight, highly secure, custom-built Nginx container, mapped dynamically to standard host ports.</p>
+        
+        <div class="tag-container">
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx Alpine</span>
+            <span class="tag">#90DaysOfDevOps</span>
+            <span class="tag">TrainWithShubham</span>
+        </div>
+
+        <div class="footer-note">
+            Day 31 Completed Successfully
+        </div>
+    </div>
+</body>
+</html>

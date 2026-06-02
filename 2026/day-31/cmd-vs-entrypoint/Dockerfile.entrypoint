@@ -1,0 +1,3 @@
+# Dockerfile using ENTRYPOINT
+FROM alpine:latest
+ENTRYPOINT ["echo"]

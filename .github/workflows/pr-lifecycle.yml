@@ -1,0 +1,31 @@
+name: PR Event Lifecycle Logger
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
+
+jobs:
+  log-pr-details:
+    name: Log PR Context
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output PR Metadata
+        run: |
+          echo "=================================================="
+          echo "📥 PR EVENT ACTIVATED"
+          echo "👉 Action Type   : ${{ github.event.action }}"
+          echo "📝 PR Title      : ${{ github.event.pull_request.title }}"
+          echo "👤 PR Author     : ${{ github.event.pull_request.user.login }}"
+          echo "🌿 Source Branch : ${{ github.event.pull_request.head.ref }}"
+          echo "🎯 Target Branch : ${{ github.event.pull_request.base.ref }}"
+          echo "=================================================="
+
+      - name: Handle PR Merged Event
+        if: github.event.pull_request.merged == true
+        run: |
+          echo "🎉 SUCCESS: The Pull Request has been merged into ${{ github.event.pull_request.base.ref }}!"
+          echo "🚀 Initiating cleanup or post-merge logging..."

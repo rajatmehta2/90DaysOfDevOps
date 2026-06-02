@@ -1,0 +1,59 @@
+name: PR Validation Gatekeeper
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  file-size-check:
+    name: Check File Sizes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Scan for Files Exceeding 1MB
+        run: |
+          echo "🔍 Scanning codebase for files larger than 1MB (excluding .git folder)..."
+          LARGE_FILES=$(find . -not -path '*/.*' -type f -size +1M)
+          if [ -n "$LARGE_FILES" ]; then
+            echo "❌ CRITICAL: The following files exceed the 1MB file size limit:"
+            echo "$LARGE_FILES"
+            exit 1
+          else
+            echo "✅ SUCCESS: All files are within acceptable limits (< 1MB)."
+          fi
+
+  branch-name-check:
+    name: Verify Branch Naming Convention
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate Head Branch Name
+        run: |
+          BRANCH_NAME="${{ github.head_ref }}"
+          echo "🌿 Checking branch name: $BRANCH_NAME"
+          
+          # Match feature/*, fix/*, or docs/*
+          if [[ "$BRANCH_NAME" =~ ^(feature/|fix/|docs/) ]]; then
+            echo "✅ SUCCESS: Branch name '$BRANCH_NAME' follows standards!"
+          else
+            echo "❌ CRITICAL: Branch name '$BRANCH_NAME' is non-compliant."
+            echo "💡 Please rename your branch to match pattern: feature/*, fix/*, or docs/*"
+            exit 1
+          fi
+
+  pr-body-check:
+    name: Check PR Description Content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scan PR Body Description
+        run: |
+          PR_BODY="${{ github.event.pull_request.body }}"
+          echo "📝 Inspecting Pull Request body/description..."
+          if [ -z "$PR_BODY" ]; then
+            echo "⚠️ WARNING: PR description is blank!"
+            echo "💡 It is highly recommended to describe changes to help reviewers."
+          else
+            echo "✅ SUCCESS: PR description is populated with context."
+          fi

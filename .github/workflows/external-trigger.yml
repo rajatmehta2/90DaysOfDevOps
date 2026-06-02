@@ -1,0 +1,21 @@
+name: Repository Dispatch External Trigger
+
+on:
+  repository_dispatch:
+    types:
+      - deploy-request
+
+jobs:
+  external-dispatch-job:
+    name: Run External API Dispatch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Process Remote Event Data
+        run: |
+          echo "=================================================="
+          echo "🔗 EXTERNAL WEBHOOK DISPATCH DECRYPTED"
+          echo "🤖 Triggered by event_type: ${{ github.event.action }}"
+          echo "🌐 Target Environment   : ${{ github.event.client_payload.environment }}"
+          echo "👤 Custom Triggered By  : ${{ github.actor }}"
+          echo "=================================================="
+          echo "🚀 Processing remote request to spin up environment: ${{ github.event.client_payload.environment }}"

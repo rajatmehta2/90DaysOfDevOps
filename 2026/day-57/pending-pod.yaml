@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pending-pod
+  labels:
+    app: heavy-resource
+spec:
+  containers:
+  - name: heavy-container
+    image: nginx:1.25.4-alpine
+    resources:
+      requests:
+        cpu: "100"
+        memory: 128Gi
+      limits:
+        cpu: "100"
+        memory: 128Gi

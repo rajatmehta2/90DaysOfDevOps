@@ -1,0 +1,23 @@
+name: Path-Inclusion CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - 'release/*'
+    paths:
+      - 'src/**'
+      - 'app/**'
+
+jobs:
+  build-and-test:
+    name: Build Filtered Application
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Run Focused Build Pipeline
+        run: |
+          echo "📦 Smart triggers verified!"
+          echo "🚀 Processing application builds for changes detected in src/ or app/..."
