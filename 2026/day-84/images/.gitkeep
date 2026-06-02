@@ -1,0 +1,4 @@
+# Placeholder for Day 84 GitOps & ArgoCD screenshots.
+# Please drop the following screenshots in this directory:
+# 1. argocd_resource_tree.png - showing the bankapp Application resource tree in ArgoCD UI
+# 2. self_healing_drift_corrected.png - showing the ArgoCD sync event after self-healing is triggered
