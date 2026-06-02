@@ -180,6 +180,3 @@ Mastering Linux internals is not just about memorizing commands; it's about buil
 3. **System Observability:** Reading logs and metrics from `/proc`, `journald`, and system signals.
 
 Keep the momentum going! 🚀
-
----
-**#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham**

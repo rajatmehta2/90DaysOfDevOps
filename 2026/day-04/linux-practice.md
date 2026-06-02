@@ -192,18 +192,4 @@ graph TD
 
 ---
 
-## 📜 5. Learn in Public & Commitment
-
-> **"Discipline, ownership, and consistency outweigh perfection. Hands-on practice builds absolute terminal confidence."**
-
-### 🎓 Connect & Share Progress
-Follow my Day 04 journey on LinkedIn. Together we are building solid infrastructure muscle memory:
-
-* **Post Focus:** Documenting hands-on Linux practice, systemd service inspections, and logs triage.
-* **Hashtags:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-**TrainWithShubham** | Day 04 Complete 🚀
+Day 04 Complete 🚀

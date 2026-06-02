@@ -207,6 +207,3 @@ In production systems, minor syntax slips can lead to major downtime. Follow the
 Mastering these core Linux CLI operations represents the critical baseline of Day 03. When troubleshooting live Cloud architectures (Kubernetes clusters, AWS EC2 compute, or Docker container clusters), you are fundamentally managing processes, logs, networks, and directories. 
 
 Keep your learning structured, stay curious, and practice safely! 🚀
-
----
-**#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham**

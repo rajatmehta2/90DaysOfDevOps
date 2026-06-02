@@ -378,17 +378,4 @@ sudo su berlin -c "touch /opt/team-workspace/berlin-fail.txt"
 
 ---
 
-## 📢 Learn in Public & Community Engagement
-
-### 🎓 Share Progress
-I am sharing my progress for the **#90DaysOfDevOps** challenge! Let's connect on LinkedIn:
-
-* **Today's Key Focus:** Configured Linux user accounts, created security groups, mapped nested permissions, and validated directory sandboxes.
-* **Securing Assets Rule of Thumb:** Use group permissions (`775`) to allow developers to collaborate safely while restricting foreign system accounts.
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-**TrainWithShubham** | Day 09 Complete 🚀
+Day 09 Complete 🚀

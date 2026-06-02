@@ -226,17 +226,4 @@ As a DevOps engineer, you will regularly inspect active files. Here are two crit
 
 ---
 
-## 📜 4. Learn in Public & Community Engagement
-
-### 🎓 Connect & Share Progress
-I am sharing my progress for the **#90DaysOfDevOps** challenge! Join the conversation and connect with the community on LinkedIn:
-
-* **Today's Key Focus:** Mastered standard redirections (`>` and `>>`), command piping, stream multiplexing with `tee -a`, and file slicing using `head` and `tail`.
-* **Must-Use Command:** `echo "config_parameter" | sudo tee -a /etc/config` — the clean DevOps standard for privileged writes.
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-**TrainWithShubham** | Day 06 Complete 🚀
+Day 06 Complete 🚀

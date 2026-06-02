@@ -398,18 +398,4 @@ error_log /var/log/nginx/error.log debug;
 
 ---
 
-## 📜 8. Learn in Public & Community Engagement
-
-> **"A dynamic design, solid runbooks, and a disciplined approach build world-class cloud environments."**
-
-### 🎓 Connect & Share Progress
-I am documenting my hands-on learning journey for the **#90DaysOfDevOps** challenge! Join the discussion on LinkedIn:
-
-* **Post Focus:** Documented live Nginx triage, system metrics verification, filesystem permissions checks, and step-by-step emergency runbook escalations.
-* **Hashtags:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-**TrainWithShubham** | Day 05 Complete 🚀
+Day 05 Complete 🚀

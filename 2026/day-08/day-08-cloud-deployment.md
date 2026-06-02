@@ -281,17 +281,4 @@ scp -i KEY_FILE_NAME.pem ubuntu@YOUR_INSTANCE_PUBLIC_IP_OR_DNS:~/nginx-logs.txt 
 
 ---
 
-## 📢 Learn in Public & Community Engagement
-
-### 🎓 Share Progress
-I am sharing my progress for the **#90DaysOfDevOps** challenge! Let's connect on LinkedIn:
-
-* **Today's Key Focus:** Deployed a cloud instance on AWS EC2, configured network firewalls, and stood up Nginx and Docker services.
-* **Incident Troubleshooting Rule of Thumb:** Always verify security groups (firewalls) when network traffic times out.
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-**TrainWithShubham** | Day 08 Complete 🚀
+Day 08 Complete 🚀

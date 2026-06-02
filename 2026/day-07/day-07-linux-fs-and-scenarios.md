@@ -456,17 +456,4 @@ ls -l /home/user/backup.sh
 
 ---
 
-## 📜 5. Learn in Public & Community Engagement
-
-### 🎓 Share Progress
-I am sharing my progress for the **#90DaysOfDevOps** challenge! Let's connect on LinkedIn:
-
-* **Today's Key Focus:** Mastered the **Linux File System Hierarchy** (`/etc`, `/var/log`, `/opt`, etc.) and practiced systematic debugging frameworks for system diagnostics.
-* **Incident Troubleshooting Rule of Thumb:** Check **status** first (`systemctl status`), query **logs** second (`journalctl -u`), and verify **configuration/privileges** third (`is-enabled` / `chmod`).
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-**TrainWithShubham** | Day 07 Complete 🚀
+Day 07 Complete 🚀
