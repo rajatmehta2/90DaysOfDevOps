@@ -740,18 +740,6 @@ The Grafana **Alerting** console showing our custom `High Container Memory` visu
 
 ---
 
-## 📣 Share Your Progress!
-Share your progress with the DevOps community on LinkedIn:
-
-> "Day 76 of the #90DaysOfDevOps Challenge: Achieved full-stack observability and proactive alerting! 🚀📈
-> 
-> Today, I completed the three pillars of observability by configuring **OpenTelemetry**! I set up an OTel Collector to receive distributed traces and metrics, and simulated application transactions using OTLP payloads.
-> 
-> I also transitioned the stack from reactive monitoring to proactive protection by setting up alert rules in both **Prometheus** (via alert-rules.yml) and **Grafana** (via visual notification policies). Now, if a host has high resource usage, a container stops, or a service target goes down, the system will automatically trigger a firing alert to notify the DevOps team.
-> 
-> The entire observability stack—covering metrics, logs, traces, and alert routing—is officially complete! 🪵🔥🔌
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #OpenTelemetry #Prometheus #Grafana #Docker #DistributedTracing #Alerting #SRE"
-
----
-**TrainWithShubham** | Day 76 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

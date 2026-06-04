@@ -597,12 +597,6 @@ Verification of target command-line outputs for custom uptime, file creation, an
 
 ---
 
-## 📣 Share Your Progress!
-Share today's milestone with the community on LinkedIn:
-
-> "Day 68 of the #90DaysOfDevOps Challenge: Started my Ansible automation journey! Set up an agentless control node, built a tiered inventory of multiple cloud instances, and leveraged ad-hoc commands to manage all nodes from a single terminal. Configuration Drift has met its match! 🚀
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Ansible #Automation #IaC #CloudEngineering"
-
----
-**TrainWithShubham** | Day 68 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

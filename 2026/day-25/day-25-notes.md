@@ -378,4 +378,9 @@ Below is the screenshot showing the successful execution of the Git Reset and Gi
 ![Git Reset vs Revert Console Verification](git_reset_revert_screenshot.png)
 
 ---
-**TrainWithShubham** | Day 25 Complete 📝
+
+Day 25 Complete 📝
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

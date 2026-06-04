@@ -548,23 +548,6 @@ Destroy complete! Resources: 52 destroyed. 🧹
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Congratulations on completing Day 81! Share your accomplishment on LinkedIn to show your progress:
-
-> **Day 81 of the #90DaysOfDevOps Challenge Complete!** 🚀
->
-> Today, I scaled our multi-tier **AI-BankApp** (Java + MySQL + Ollama AI chatbot) to a production-grade cloud environment on **AWS Amazon EKS** using **Terraform**!
->
-> 🔹 **VPC Topology**: Provisioned 9 subnets across 3 Availability Zones with NAT Gateways for secure routing.
-> 🔹 **Compute Cluster**: Deployed a managed EKS control plane and dynamic AL2023 EC2 Node Group.
-> 🔹 **AWS Add-ons**: Installed CoreDNS, VPC-CNI, Metrics Server, and the AWS EBS CSI driver.
-> 🔹 **Dynamic Storage**: Verified automated EBS volumes provisioning inside AWS when deploying database pods.
-> 🔹 **GitOps ready**: Bootstrapped ArgoCD directly using Helm provider integration!
->
-> Infrastructure as Code from the ground up! Onto the next challenge!
->
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #AWS #EKS #Kubernetes #Terraform #IaC #ArgoCD #GitOps
-
----
-**Prepared with ❤️ by Rajat Mehta** | [GitHub Portfolio](https://github.com/rajatmehta2/90DaysOfDevOps)
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -387,4 +387,9 @@ Below is a visual dashboard representing how Git reset, revert, and branching co
 ![Git Reset vs Revert Console Verification](git_reset_revert_screenshot.png)
 
 ---
-**TrainWithShubham** | Days 22–25 Complete 📘
+
+Days 22–25 Complete 📘
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -767,25 +767,8 @@ The final screenshot below verifies our multi-tier deployment, detailing the cli
 
 ---
 
-## 🏁 Submission & Learn in Public
+Day 32 Complete 📦🚀
 
-Congratulations! You have successfully mastered Docker storage volumes, bind mounts, bridge topologies, and custom inter-service DNS networking!
-
-1. **Commit and Push changes to your GitHub fork:**
-   ```bash
-   # Stage files
-   $ git add day-32-volumes-networking.md
-   
-   # Commit with a professional description
-   $ git commit -m "docs: complete Day 32 Docker storage volumes and container networking labs"
-   
-   # Push changes
-   $ git push origin main
-   ```
-
-2. **Learn in Public:**
-   Share your experience with named volumes vs. bind mounts or explain the dynamic DNS benefits of custom networks on LinkedIn or X (Twitter). Use these hashtags to share your success:
-   `#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#Docker` `#DockerNetworking` `#DevOps`
-
----
-**TrainWithShubham** | Day 32 Complete 📦🚀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

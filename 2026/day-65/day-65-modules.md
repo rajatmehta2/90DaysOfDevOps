@@ -619,26 +619,6 @@ Confirming that the dynamic ingress ports `[22, 80, 443]` are correctly mapped a
 
 ---
 
-## 📢 Share Your Journey!
-
-Copy and paste this message to LinkedIn to showcase your milestone:
-
-```text
-🚀 Day 65 of my #90DaysOfDevOps challenge complete! Built & Orchestrated Reusable Terraform Modules! 🏗️🔌
-
-Today, I took a massive architectural step forward with HashiCorp Terraform—transitioning from monolithic configurations to professional, highly scalable modular architectures:
-🔹 Designed and built a custom EC2 Compute Module from scratch to parameterize and standardize VM deployments.
-🔹 Developed a custom Security Group Module utilizing dynamic "ingress" blocks to loop over variable-defined port configurations.
-🔹 Decoupled resource configurations using HCL input variables and output exposes to easily wire components together.
-🔹 Migrated manually written network resources to the battle-tested, official Public AWS VPC Registry Module.
-🔹 Provisioned multiple application servers across distinct Availability Zones using reusable, parameterized module blocks.
-
-By writing clean, focused, and versioned modules, our infrastructure as code is now highly scalable, reusable, and team-collaboration ready!
-
-#90DaysOfDevOps #TerraWeek #IaC #Terraform #AWS #DevOps #CloudEngineering #Automation #InfrastructureAsCode #VPC #EC2 #MultiAZ #PlatformEngineering
-```
-
----
-
-*Awesome work on completing Day 65! We are building solid, production-grade infrastructure foundations!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

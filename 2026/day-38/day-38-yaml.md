@@ -271,13 +271,6 @@ Below is a graphical representation of the verification tests running locally on
 2. **Dynamic Typing Validation:** YAML figures out data types dynamically. An unquoted value of `true`/`false` parses as a boolean type, whereas quoting `"true"` parses as a string type. When mapping environment variables, explicitly quote values if string formats are enforced.
 3. **Structured Hierarchy:** Standardizing on **2 spaces** for nested scopes ensures code is legible, scalable, and fully compatible with linters.
 
----
-
-## 🔗 Connect & Support!
-
-Let's exchange ideas and discuss infrastructure-as-code! Follow my learning progress and support my daily DevOps journey:
-
-* **LinkedIn**: [Rajat Mehta](https://linkedin.com/in/rajatmehta)
-* **GitHub**: [@rajatmehta2](https://github.com/rajatmehta2)
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#YAMLBasics` `#IaC` `#Automation`
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

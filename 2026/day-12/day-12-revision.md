@@ -235,25 +235,8 @@ Over the next 3 days, I will focus on:
 
 ---
 
-## 📢 8. Learn in Public & Community Engagement
+Day 12 Complete 🔄
 
-### 🎓 Share Progress
-Consolidating foundations is where real engineering reliability begins! I am excited to share my progress for **Day 12** of the **#90DaysOfDevOps** challenge:
-
-* **Today's Key Focus:** Completed a comprehensive breather and revision lab auditing processes, services, file security flags, and multi-user configurations.
-* **Confidence Level:** Confidently analyzing active socket listeners via `ss -tulpn` and debugging failed runtime services with `journalctl`.
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-
-## 📸 9. Verification Screenshot
-
-The screenshot below documents the diagnostic outputs, process verification runs, and permissions adjustments completed inside the terminal environment:
-
-![Linux Revision and Consolidation Verification](revision_screenshot.png)
-
----
-**TrainWithShubham** | Day 12 Complete 🔄
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

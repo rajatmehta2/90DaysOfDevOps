@@ -279,18 +279,6 @@ jobs:
 * **A failing pipeline is a success**, not a failure! It successfully prevented broken code from reaching production.
 * **Paradigm Shift:** Moving from manual deployment to automated deployment increases stability, velocity, and dev happiness.
 
----
-
-## 📱 Learn in Public
-Share your conceptual knowledge on LinkedIn and social channels to build your brand as a DevOps expert!
-
-```text
-Day 39 of the #90DaysOfDevOps challenge completed! Today, I explored the vital architecture of CI/CD. From understanding "Integration Hell" to mapping pipeline anatomy and inspecting real-world FastAPI workflows on GitHub. 
-
-Ready to write our first automation script tomorrow! 
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #ContinuousIntegration #ContinuousDeployment #Docker #GithubActions
-```
-
----
-*Created in collaboration with **TrainWithShubham**.*
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

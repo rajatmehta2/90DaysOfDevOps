@@ -598,21 +598,6 @@ To follow the principle of least privilege, ArgoCD only requires read access to 
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Completed the GitOps and ArgoCD module? Share your milestone on LinkedIn to show your progress:
-
-> **Day 84 of the #90DaysOfDevOps Challenge Complete!** 🚀
->
-> Today, I moved away from manual deployments and implemented GitOps for our multi-tier **AI-BankApp** (Spring Boot + MySQL + Ollama AI) using **ArgoCD** on **Amazon EKS**!
->
-> 🔹 **Declarative State**: Switched to a pull-based continuous delivery model, managing the entire application lifecycle through Git.
-> 🔹 **Drift Detection & Correction**: Tested self-healing by manually scaling down deployments and deleting core ConfigMaps—ArgoCD automatically restored resources to match Git within seconds!
-> 🔹 **Automated Sync & Pruning**: Configured automated sync policies (`selfHeal` and `prune`) with `ServerSideApply` for clean, automated, and conflict-free releases.
->
-> With GitOps, Git is the single source of truth for both configurations and cluster state—no more untraceable manual changes!
->
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitOps #ArgoCD #Kubernetes #EKS #AWS #ContinuousDelivery #SRE #CloudEngineering #DevOpsJourney
-  
----
-**Prepared with ❤️ by [Rajat Mehta](https://github.com/rajatmehta2)** | [GitHub Portfolio](https://github.com/rajatmehta2/90DaysOfDevOps)
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

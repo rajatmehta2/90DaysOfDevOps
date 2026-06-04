@@ -525,29 +525,6 @@ In this lab, we built a tool that can restart containers. In production, tools c
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Ready to share your progress on LinkedIn? Here is a ready-to-use template:
-
-```text
-🚀 DevOps + Agentic AI: Day 87 of the #90DaysOfDevOps Challenge!
-
-Today, I took my first major step beyond static automation scripts into autonomous systems by engineering local AI agents.
-
-What I built and mastered:
-1. Local LLM Lab: Set up Ollama to run the Gemma 4 instruction-tuned model entirely offline and on-prem.
-2. Docker Error Explainer: Built an expert assistant that diagnoses complex daemon connection and binding errors instantly.
-3. Autonomous SRE Agent: Engineered an agent powered by LangChain and the ReAct (Reason + Act) pattern.
-4. Tool Integration: Configured the agent with custom Python tools wrapping Docker CLI. It diagnosed a crashing container entirely on its own by checking container status, reading stdout/stderr logs, and inspecting runtime configs!
-5. Closed-loop Remediation: Added custom SRE capabilities (listing disk utilization and executing container restarts).
-
-AI in DevOps isn't just about code suggestions—it's about building resilient, self-diagnosing, and autonomous infrastructure assistants. Next up: extending this to Kubernetes!
-
-Thanks to @TrainWithShubham for the amazing modules.
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #AgenticAI #Ollama #LangChain #Docker #GenerativeAI #SRE
-```
-
----
 **Happy Learning!**
-**TrainWithShubham**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

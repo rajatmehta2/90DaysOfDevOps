@@ -376,4 +376,9 @@ $ git log --all --graph --oneline --decorate
 ![Git Branching & GitHub Push Console Screenshot](git_branching_screenshot.png)
 
 ---
-**TrainWithShubham** | Day 23 Complete 📝
+
+Day 23 Complete 📝
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -193,3 +193,7 @@ graph TD
 ---
 
 Day 04 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

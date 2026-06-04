@@ -727,22 +727,6 @@ Cleanup Complete! All Day 82 resources have been removed safely. 🧹
 
 ---
 
-## 📢 Section 8: Share Your Learning in Public!
-
-Congratulations on completing Day 82! Share your milestone on LinkedIn to show your progress:
-
-> **Day 82 of the #90DaysOfDevOps Challenge Complete!** 🚀
->
-> Today, I implemented production-grade networking and persistent block storage for our multi-tier **AI-BankApp** running on **AWS Amazon EKS**!
->
-> 🔹 **Gateway API vs Ingress**: Discovered the power of the next-generation Kubernetes Gateway API and set up Envoy Gateway for routing.
-> 🔹 **Session Affinity**: Configured cookie-based session persistence using Envoy's BackendTrafficPolicy to prevent Spring Boot session issues.
-> 🔹 **TLS Automation**: Deployed cert-manager along with Let's Encrypt to automate SSL/TLS certificates using HTTP-01 solvers.
-> 🔹 **EBS Storage Deep Dive**: Explored how the AWS EBS CSI driver dynamically provisions gp3 volumes on EKS, and verified that data survives pod deletions.
->
-> Step-by-step, we're building a production-ready DevOps infrastructure!
->
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #AWS #EKS #Kubernetes #Networking #Storage #Envoy #GatewayAPI #certmanager #LetEncrypt #DevOps #SRE
- 
----
-**Prepared with ❤️ by [Rajat Mehta](https://github.com/rajatmehta2)** | [GitHub Portfolio](https://github.com/rajatmehta2/90DaysOfDevOps)
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

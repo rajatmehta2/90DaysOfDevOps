@@ -763,22 +763,6 @@ Below is a detailed breakdown of the costs incurred during this 3-day lab on Ama
 
 ---
 
-## 📢 Section 8: Share Your Learning in Public!
-
-Completed the EKS Capstone Project? Share your milestone on LinkedIn to show your progress:
-
-> **Day 83 of the #90DaysOfDevOps Challenge Complete!** 🚀
->
-> Today, I reached a major milestone: deploying our multi-tier **AI-BankApp** (Spring Boot + MySQL + Ollama AI) as a production-grade workload on **Amazon EKS**!
->
-> 🔹 **Dynamic Autoscaling**: Implemented the Horizontal Pod Autoscaler (HPA) to scale application replicas based on real-time CPU utilization.
-> 🔹 **EKS Storage & Network**: Configured persistent storage using the AWS EBS CSI driver and managed external routing via Envoy Gateway API.
-> 🔹 **observability Stack**: Installed Prometheus and Grafana via Helm, creating a ServiceMonitor to scrape custom JVM and HTTP application metrics.
-> 🔹 **Infrastructure Teardown**: Practiced secure cloud hygiene by executing a complete, verified cleanup using Terraform destroy.
->
-> From a blank canvas to a fully monitored, auto-scaling application on EKS in 3 days!
->
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #AWS #EKS #Kubernetes #Prometheus #Grafana #Envoy #GatewayAPI #HPA #DevOps #SRE #CloudEngineering
- 
----
-**Prepared with ❤️ by [Rajat Mehta](https://github.com/rajatmehta2)** | [GitHub Portfolio](https://github.com/rajatmehta2/90DaysOfDevOps)
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -472,5 +472,6 @@ Destroy complete! Resources: 38 destroyed.
 
 ---
 
-💡 **Share your learning on LinkedIn!** 
-> "Provisioned a full AWS EKS cluster with Terraform modules today -- VPC, subnets, NAT gateway, IAM roles, node groups, the works. 38 resources created with one command, deployed Nginx on it, and destroyed everything cleanly. This is real-world infrastructure as code. #90DaysOfDevOps #TerraWeek #DevOpsKaJosh #TrainWithShubham"
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

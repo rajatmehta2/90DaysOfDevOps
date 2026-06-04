@@ -428,28 +428,6 @@ Here is a visual dashboard tracking our Kubernetes Metrics Server scraping activ
 
 ---
 
-## 📣 Share Your Learning!
-
-Celebrate completing Day 58 of the challenge by sharing your progress on social media:
-
-```text
-I just completed Day 58 of the #90DaysOfDevOps challenge! 🚀
-
-Today I covered Kubernetes Metrics Server & Horizontal Pod Autoscaler (HPA):
-- Installed and configured the Metrics Server to unlock cluster-wide resource scraping.
-- Explored dynamic resource utilization monitoring using "kubectl top" with sorting parameters.
-- Built a resource-bounded Deployment with explicit CPU requests to support HPA metrics scaling.
-- Configured and tested an imperative HPA, watching replica scaling actions in real-time.
-- Generated synthetic traffic load to trigger auto-scaling from 1 to multiple replicas.
-- Explored scale-down stabilization cooldown mechanics that prevent system flapping.
-- Configured a declarative HPA using the autoscaling/v2 API with granular scale-up and scale-down behaviors.
-
-All manifest files and step-by-step guides are pushed to my repository!
-
-#90DaysOfDevOps #Kubernetes #DevOps #MetricsServer #Autoscaling #HPA #CloudNative #InfrastructureAsCode #TrainWithShubham #DevOpsKaJosh
-```
-
----
-
-**Awesome job completing today's lab! Keep pushing forward!**  
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

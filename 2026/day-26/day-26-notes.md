@@ -424,4 +424,9 @@ To verify my local-to-remote terminal integration, here is the active terminal d
 ![GitHub CLI Terminal Session Dashboard](github_cli_screenshot.png)
 
 ---
-**TrainWithShubham** | Day 26 Complete 🚀
+
+Day 26 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

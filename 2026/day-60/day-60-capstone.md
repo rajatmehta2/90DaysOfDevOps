@@ -787,36 +787,6 @@ To promote this WordPress + MySQL stack from a development lab to a production-g
 
 ---
 
-## 📢 Share Your Journey!
-
-Ready to share your Kubernetes milestone with the DevOps community? Copy-paste this template directly to LinkedIn:
-
-```text
-🚀 Day 60 of my #90DaysOfDevOps challenge is complete! I have successfully finished the Kubernetes Capstone Project! 🐳📦
-
-Over the last 10 days, I journeyed deep into the Kubernetes ecosystem. Today, I put all twelve major concepts together to deploy a highly available, self-healing, and persistent WordPress + MySQL stack from scratch!
-
-Here's what I implemented:
-🔹 Set up isolated development environments using Namespaces.
-🔹 Secured sensitive database user and root access credentials using Secrets.
-🔹 Configured application environmental variables dynamically via ConfigMaps.
-🔹 Deployed a stateful database tier with stable network identities using StatefulSets and Headless Services.
-🔹 Configured dynamic Persistent Volumes (PV) and PVCs to persist MySQL data across pod restarts.
-🔹 Built a scalable frontend web server tier using Deployments.
-🔹 Exposed the WordPress dashboard to external web traffic using NodePort Services.
-🔹 Guaranteed container runtime performance stability using Resource Limits & Requests.
-🔹 Achieved automated self-healing application routing using Liveness & Readiness Probes.
-🔹 Scaled the frontend dynamically to handle high-stress traffic spikes using a Horizontal Pod Autoscaler (HPA).
-🔹 Conducted a comparative analysis between manual manifest deployments and Helm packages.
-
-Simulating pod crashes and watching the stateless web tier and stateful database tier heal themselves automatically while preserving our data was incredibly rewarding!
-
-Check out my full documentation, architecture diagrams, and manifest codes in my repository: https://github.com/rajatmehta2/90DaysOfDevOps
-
-#Kubernetes #CloudNative #DevOps #WordPress #MySQL #Containers #StatefulSets #HPA #Helm #DevOpsKaJosh #TrainWithShubham
-```
-
----
-
-*This guide was curated as part of the 90DaysOfDevOps learning journey. Keep learning!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

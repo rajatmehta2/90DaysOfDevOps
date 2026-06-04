@@ -431,16 +431,6 @@ Executing storage validation metrics on the TSDB database directory:
 
 ---
 
-## 📣 Share Your Progress!
-Share your accomplishments with the community on LinkedIn:
-
-> "Day 73 of the #90DaysOfDevOps Challenge: Dived into the core concepts of Observability! 🚀
-> 
-> Today, I explored the differences between traditional monitoring and modern observability, and studied the three pillars: Metrics, Logs, and Traces. I set up a Prometheus server in a Docker environment, configured it to scrape its own metrics, and learned how to query data using PromQL. I also expanded the stack by deploying a sample notes application and configuring multi-target scraping. 
-> 
-> The journey into metrics collection and performance diagnostics has begun! 📈
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Prometheus #Docker #Observability #PromQL #SRE"
-
----
-**TrainWithShubham** | Day 73 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

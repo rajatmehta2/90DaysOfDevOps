@@ -306,4 +306,9 @@ Below is the visual structure of how commits flow, branch, and merge using the a
 ![Git Advanced Commands Console Screenshot](git_advanced_screenshot.png)
 
 ---
-**TrainWithShubham** | Day 24 Complete 📘
+
+Day 24 Complete 📘
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

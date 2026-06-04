@@ -293,25 +293,8 @@ flowchart TD
 
 ---
 
-## 📢 Learn in Public & Engagement
+Day 15 Complete 🌐
 
-### 🎓 Share Progress
-Infrastructure is only as reliable as the logical network paths holding it together! I am thrilled to share my progress for **Day 15** of the **#90DaysOfDevOps** challenge:
-
-* **Today's Key Focus:** Deep dive into foundational networking concepts, including DNS tree lookups, IP addressing structures, CIDR subnetting computations, and port multiplexing.
-* **Lab Milestones:** Evaluated A-records and TTL properties with `dig`, audited local network adapters and private IP allocations, computed CIDR subnet tables, analyzed listening ports, and designed a robust database troubleshooting runbook.
-* **Join the Journey on LinkedIn:**
-  - `#90DaysOfDevOps`
-  - `#DevOpsKaJosh`
-  - `#TrainWithShubham`
-
----
-
-## 🎨 Visual Networking Concepts Infographic
-
-The infographic below summarizes the core concepts covered in today's lab—including DNS resolution paths, IPv4 structures, CIDR allocations, and listening service port mappings:
-
-![Vibrant Modern Infographic Mapping Day 15 Networking Concepts](networking_concepts.png)
-
----
-**TrainWithShubham** | Day 15 Complete 🌐
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

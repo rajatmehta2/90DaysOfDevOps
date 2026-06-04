@@ -894,11 +894,6 @@ Below is the verified screenshot showing the application dashboard fully running
 
 ---
 
-### 📢 Share Your Learning in Public!
-Let's share this huge milestone on LinkedIn:
-> "Day 79 of #90DaysOfDevOps accomplished! Today, I converted 12 complex, hardcoded Kubernetes YAML manifests of the AI-BankApp project into a modular, production-ready Custom Helm Chart. Parameterized every block through values.yaml, managed Base64 secret packaging dynamically using pipelines, and implemented functional feature toggles. Standardized delivery mechanisms!"
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#Kubernetes` `#Helm`
-
----
-**Prepared with ❤️ by TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

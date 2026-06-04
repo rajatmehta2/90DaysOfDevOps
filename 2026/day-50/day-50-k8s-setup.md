@@ -393,23 +393,6 @@ kind create cluster --name devops-cluster
     kind get clusters
     ```
 
----
-
-## 🎯 Wrap-Up & Learning in Public
-
-Today was an incredibly rewarding milestone! We successfully transitioned from single-container runtimes to multi-node cluster orchestration:
-1. Mastered the history and purpose of **K8s** over traditional Docker limits.
-2. Explored and visualised the Control Plane and Worker architecture.
-3. Created a fully configured Kubernetes cluster using **kind** on a macOS system.
-4. Traced API workflows and verified control plane microservices running as pods.
-
-### 🔗 Share your journey!
-```text
-Started my Kubernetes journey today on Day 50 of the #90DaysOfDevOps challenge! 🚀
-
-I successfully set up a local cluster using kind (Kubernetes in Docker), mapped out the architectural flow from API Server to Worker Node kubelets, and watched the internal control plane services run dynamically as pods under kube-system. 
-
-The container orchestration chapter has officially begun! 🐳🌐
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Kubernetes #Containers #CloudNative
-```
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

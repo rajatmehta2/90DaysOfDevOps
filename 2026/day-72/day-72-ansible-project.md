@@ -742,14 +742,6 @@ Curling the target server on port `80` demonstrates Nginx successfully proxying 
 
 ---
 
-## 📣 Share Your Progress!
-Share your progress with the community on LinkedIn:
-
-> "Day 72 of the #90DaysOfDevOps Challenge: Reached the pinnacle of my Ansible automation journey! 🚀 Today, I successfully completed a comprehensive capstone project that brings together all Ansible concepts into a unified pipeline. 
-> 
-> I developed custom roles from scratch to configure baseline systems, provision the Docker CE Engine, log into Docker Hub with Vault-encrypted secrets, spin up containerized services, and deploy Nginx as a reverse proxy on port 80. Going from a fresh host to a fully functional application environment now takes just a single command. 
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Ansible #Docker #Nginx #Automation #IaC #SystemsEngineering"
-
----
-**TrainWithShubham** | Day 72 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

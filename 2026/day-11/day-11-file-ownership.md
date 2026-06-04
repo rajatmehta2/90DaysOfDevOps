@@ -484,24 +484,8 @@ ls -l bank-heist/
 
 ---
 
-## 📢 Learn in Public & Community Engagement
+Day 11 Complete 🚀
 
-### 🎓 Share Progress
-I am documenting my progress for the **#90DaysOfDevOps** challenge! Let's connect on LinkedIn:
-
-* **Today's Key Focus:** Mastered user and group ownership bounds, structured atomic chown assignments, and recursively secured complex project directory structures.
-* **Pro-Tip:** In containerized Kubernetes/Docker or cloud application deployments, setting the exact non-root user/group ownership prevents privilege escalation vulnerabilities.
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-
-## 📸 Verification Screenshot
-The screenshot below documents the successful completion of the ownership challenge tasks and final file attributes validation inside our terminal workspace:
-
-![Linux File Ownership Verification](ownership_screenshot.png)
-
----
-**TrainWithShubham** | Day 11 Complete 🚀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

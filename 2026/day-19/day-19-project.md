@@ -578,29 +578,8 @@ chmod +x maintenance.sh
 
 ---
 
-## 📢 Learn in Public & Engagement
+Day 19 Complete 🛠️
 
-### 🎓 Share Progress
-Automated system maintenance separates ad-hoc server administration from scalable, reliable DevOps engineering. I am excited to share my progress for **Day 19** of the **#90DaysOfDevOps** challenge!
-
-* **Today's Key Focus:** Created three robust shell scripts that automate log rotation, timestamped backups, and system maintenance scheduling.
-* **Lab Milestones:**
-  - Coded `log_rotate.sh` to compress logs older than 7 days and prune archives older than 30 days safely using null delimiters.
-  - Developed `backup.sh` to create timestamped server backups, verify file sizes, and prune archives older than 14 days.
-  - Built `maintenance.sh` to orchestrate rotation and backups into a unified execution flow with full logging fallbacks.
-  - Documented scheduled cron entries for daily log rotation, weekly backups, and frequent health checks.
-* **Join the Conversation on LinkedIn:**
-  - `#90DaysOfDevOps`
-  - `#DevOpsKaJosh`
-  - `#TrainWithShubham`
-
----
-
-## 🎨 Visual Lab Walkthrough Screenshot
-
-The screenshot below demonstrates the successful execution of the scheduled maintenance runner (`maintenance.sh`). It displays the logs from the rotation and backup subroutines running successfully and generating our timestamped audit trails:
-
-![Clean macOS Apple Silicon terminal showing Day 19 script maintenance execution logs](day-19-project.png)
-
----
-**TrainWithShubham** | Day 19 Complete 🛠️
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

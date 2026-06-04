@@ -554,26 +554,6 @@ Displays the `terraform console` terminal session, confirming successful testing
 
 ---
 
-## 📢 Share Your Journey!
-
-Copy and paste this message to LinkedIn to showcase your milestone:
-
-```text
-🚀 Day 63 of my #90DaysOfDevOps challenge complete! Made my Terraform configurations fully dynamic and production-ready! 🛠️☁️
-
-Today, I converted my static configurations into a reusable, enterprise-ready infrastructure-as-code repository:
-🔹 Replaced all hardcoded attributes with Input Variables, enforcing strict type validations.
-🔹 Created isolated staging/production configurations using `.tfvars` files and mastered the variable precedence scale.
-🔹 Added dynamic Data Sources (`aws_ami` and `aws_availability_zones`) to automatically query AWS endpoints in real time.
-🔹 Implemented local configurations (`locals`) using the `merge()` function to build standard, consistent tags.
-🔹 Configured built-in ternary conditions and network cidr calculations inside the interactive `terraform console`.
-
-Zero hardcoding, zero downtime! Moving toward automated multi-environment pipelines has never felt so seamless.
-
-#90DaysOfDevOps #TerraWeek #IaC #HashiCorp #Terraform #AWS #DevOps #CloudEngineering #MultiEnvironment #Automation
-```
-
----
-
-*Awesome job on completing Day 63! Let's continue building on Day 64!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

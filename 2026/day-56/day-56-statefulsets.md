@@ -482,27 +482,6 @@ Here is a visual validation of our Kubernetes StatefulSets lab running successfu
 
 ---
 
-## 📣 Share Your Learning!
-
-Celebrate completing Day 56 of the challenge by sharing your progress on social media:
-
-```text
-I just completed Day 56 of the #90DaysOfDevOps challenge! 🚀
-
-Today I explored Kubernetes Workloads: StatefulSets (STS). Here is a summary of what I covered:
-- Proved why stateless Deployments fail for stateful apps like databases due to random pod names.
-- Configured a Headless Service (clusterIP: None) to handle direct Pod routing and internal cluster DNS.
-- Deployed a StatefulSet and observed strict sequential startup (web-0 ➔ web-1 ➔ web-2).
-- Conducted DNS lookups resolving individual pods via stable internal DNS records.
-- Demonstrated compute-to-storage sticky mapping where data survives pod recreation.
-- Explored sequential scaling up and reverse-sequential scaling down, verifying that PVCs are preserved for security.
-
-All configuration manifests and lab verification commands are pushed to my GitHub.
-
-#90DaysOfDevOps #Kubernetes #StatefulSets #DevOps #Storage #Databases #CloudNative #TrainWithShubham #DevOpsKaJosh
-```
-
----
-
-**Awesome job completing today's lab! Keep pushing forward!**  
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

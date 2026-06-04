@@ -434,25 +434,8 @@ Error: Invalid selection 'invalid'. Please enter 'y' or 'n'.
 
 ---
 
-## 📢 Learn in Public & Engagement
+Day 16 Complete 🐚
 
-### 🎓 Share Progress
-Writing code manually on the terminal is quick; but writing automation scripts that standardise configurations is how we scale! I am thrilled to share my progress for **Day 16** of the **#90DaysOfDevOps** challenge:
-
-* **Today's Key Focus:** Initiated the Shell Scripting fundamentals journey! Designed custom utility scripts to manage variable interpolation, capture terminal stdin, audit local directories, and automate system process health checks.
-* **Lab Milestones:** Developed 6 fully executable Bash scripts featuring strict input validation gates, shebang compliance declarations, portable string-case conversion filters, and cross-platform fallback mechanisms for environments lacking systemd tools.
-* **Join the Journey on LinkedIn:**
-  - `#90DaysOfDevOps`
-  - `#DevOpsKaJosh`
-  - `#TrainWithShubham`
-
----
-
-## 🎨 Visual Lab Walkthrough Screenshot
-
-The screenshot below captures the precise execution profile, terminal rendering, and modern syntax highlight behavior when running Task 1's shebang validation and script launch:
-
-![A professional terminal window mockup illustrating Bash shell scripting commands](shell_scripting_basics.png)
-
----
-**TrainWithShubham** | Day 16 Complete 🐚
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

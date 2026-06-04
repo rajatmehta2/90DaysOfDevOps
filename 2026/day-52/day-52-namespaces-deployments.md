@@ -620,26 +620,6 @@ Below is the verified state of the cluster with active Deployments and isolated 
 
 ---
 
-## 🔗 Learn in Public: Share Your Progress!
-
-Share your learning milestones on LinkedIn or Twitter to build your presence and showcase your skills:
-
-```text
-Day 52 of the #90DaysOfDevOps challenge completed! 🚀☸️
-
-Today, I scaled my Kubernetes knowledge to a production-ready level:
-• Mastered Kubernetes Namespaces (dev, staging, production) to establish strong environment isolation boundaries.
-• Created my first declarative Deployment manifest and launched a multi-replica Nginx cluster.
-• Tested self-healing mechanics by deleting pods and watching the ReplicaSet controller instantly revive them.
-• Practiced zero-downtime Rolling Updates to upgrade container versions, and successfully executed rapid Rollbacks!
-
-Orchestration is starting to show its true power! Onward to Services next! 🐳
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Kubernetes #CloudNative #DevOps #Containerization #SRE
-```
-
----
-
 **Happy Learning!**
 *Trainer: Shubham Londhe*
 *Study Notes compiled by: Rajat Mehta*

@@ -659,27 +659,6 @@ NAME    NAMESPACE    REVISION    UPDATED    STATUS    CHART    APP VERSION
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Ready to showcase today's milestones to the DevOps community? Copy-paste this template on LinkedIn:
-
-```text
-🚀 Day 59 of my #90DaysOfDevOps challenge completed! Today, I explored Helm — the package manager for Kubernetes! 
-
-Instead of writing and maintaining dozens of distinct YAML manifests for Deployments, Services, and PV/PVCs, I automated the process! Here's what I achieved:
-🔹 Mastered Helm's core architecture and pillars: Charts, Repositories, and Releases.
-🔹 Configured, customized, and deployed external charts using custom-values.yaml.
-🔹 Performed zero-downtime application upgrades and instantaneous release rollbacks.
-🔹 Scaffolded and deployed my own Custom Helm Chart from scratch using Go Templating engines.
-
-Helm makes managing complex microservices in Kubernetes amazingly scalable and consistent. 
-
-Check out my full documentation and code templates in my repo: https://github.com/rajatmehta2/90DaysOfDevOps
-
-#Kubernetes #Helm #DevOps #CloudNative #InfrastructureAsCode #DevOpsKaJosh #TrainWithShubham
-```
-
----
-
-*This guide was curated as part of the 90DaysOfDevOps learning journey. Keep learning!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

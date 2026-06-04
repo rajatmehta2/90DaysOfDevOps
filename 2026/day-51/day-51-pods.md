@@ -552,27 +552,6 @@ No resources found in default namespace.
 *   **`kubectl logs <name>`** — Fetches the stdout and stderr streams of containerized runtimes.
 *   **`kubectl exec -it <name> -- /bin/sh`** — Spawns an interactive shell inside a target container.
 *   **`kubectl label pod <name> key=value`** — Applies tags to existing resources at runtime.
-*   **`--dry-run=client -o yaml`** — Instantly generates standardized declarative configurations.
-
----
-
-## 🔗 Learn in Public: Share Your Progress!
-
-Share your learning milestones on LinkedIn or Twitter to inspire the community:
-
-```text
-Day 51 of the #90DaysOfDevOps challenge completed! 🚀
-
-Today, I took my first major step inside the Kubernetes runtime layer:
-• Mastered the declarative anatomy of K8s YAML manifests (apiVersion, kind, metadata, spec).
-• Wrote multi-label Pod manifests (Nginx, BusyBox, PostgreSQL) completely from scratch.
-• Traced real-time shell executions and verified validation dry-runs (client vs. server).
-• Explored dynamic label selectors and understood the volatility of bare standalone Pod lifecycles.
-
-The foundations are locked in. Ready to orchestrate deployments next! 🐳☸️
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Kubernetes #CloudNative #DevOps
-```
 
 ---
 

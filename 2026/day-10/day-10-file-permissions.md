@@ -173,3 +173,7 @@ The screenshot below documents the successful execution of the permission adjust
 1. **Principle of Least Privilege**: Access permissions should always be restricted to the minimum set required for correct operation, especially when handling sensitive deployment variables or SSH keys.
 2. **Directory Traversal**: The execute (`x`) attribute on a directory determines whether a user can traverse inside it (e.g., execute `cd` or access subdirectories), which is distinct from file execution.
 3. **Octal vs. Symbolic Modes**: Mastery of both absolute octal values (e.g., `755`, `600`) and relative symbolic adjustments (e.g., `+x`, `-w`) is vital for configuring reliable and secure infrastructures in CI/CD, Docker containers, and cloud environments.
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

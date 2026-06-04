@@ -374,27 +374,6 @@ What is the full lifecycle journey of a line of code in this setup? Here is the 
 3. **Access Control Checks**: Restricting registry push capabilities to the primary production branch (`main`) protects registries from intermediate, experiment-heavy branch builds.
 4. **PAT Over Passwords**: Always authenticate automation systems using granular API access tokens (PATs) rather than global passwords. Keep credentials safe and scoped.
 
----
-
-## 📱 Learn in Public
-
-Share your victory with the community! Use this social-media-ready template to post on LinkedIn and Twitter:
-
-```text
-Day 45 of the #90DaysOfDevOps challenge completed! Today, I built and deployed a fully automated, production-grade Docker CI/CD pipeline using GitHub Actions! 🐳🚀
-
-What I accomplished today:
-1. Created an automated workflow (.github/workflows/docker-publish.yml) that triggers on repository pushes.
-2. Engineered a robust multi-tag strategy, publishing Docker containers to Docker Hub with both 'latest' and unique 'sha-<commit>' tags for perfect traceablity.
-3. Configured conditional pipeline controls in GitHub Actions, ensuring Docker Hub registry uploads are strictly authorized on main branch merges, while verifying compilation on all feature branches.
-4. Set up high-performance compilation caching via Buildx to speed up pipeline building runtimes.
-5. Added a dynamic GitHub Status Badge showing real-time pipeline health.
-6. Pulled and verified the live image from Docker Hub locally!
-
-Eliminating manual operations by establishing seamless git-to-container workflows is a massive game changer. Onward to more advanced DevOps architectures! ⚡
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitHubActions #Docker #DockerHub #CICD #ContinuousDelivery #DevOps #Automation #CloudComputing #SoftwareDevelopment
-```
-
----
-*Created in collaboration with **TrainWithShubham**.*
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

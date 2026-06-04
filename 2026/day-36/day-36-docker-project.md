@@ -550,13 +550,6 @@ By executing a dedicated two-stage build, the absolute surface area and dependen
 - [x] **Task 4**: Tagged and shipped the build to Docker Hub.
 - [x] **Task 5**: Wiped local storage and successfully ran the system fresh from Docker Hub.
 
----
-
-## 🔗 Connect with me!
-
-Let's learn and grow together! Share your feedback on this setup:
-
-* **LinkedIn**: [Rajat Mehta](https://linkedin.com/in/rajatmehta)
-* **GitHub**: [@rajatmehta2](https://github.com/rajatmehta2)
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#DockerProject` `#MultiStageBuild`
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

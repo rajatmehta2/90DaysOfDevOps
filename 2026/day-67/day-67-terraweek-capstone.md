@@ -798,32 +798,6 @@ A complete summary of our learning journey during this Terraform challenge:
 
 ---
 
-## 📢 Share Your Journey & Learn in Public!
-
-Completed your run? Copy this post and share your milestone with the DevOps community on LinkedIn!
-
-```text
-🚀 Milestone Achieved: Completed the TerraWeek Challenge! 🛠️☁️
-
-Seven days of intense, hands-on Infrastructure-as-Code (IaC) learning have culminated in a production-ready, multi-environment capstone project!
-
-Throughout this week, I've designed, optimized, and automated:
-🔹 HCL structures, dependencies, custom child modules, and registry module wrappers.
-🔹 Enterprise variables, local values, output mappings, and real-time AWS API data sources.
-🔹 High-security setups using Remote S3 state files, DynamoDB state locking, and encryption.
-🔹 A production-grade Amazon EKS Kubernetes Cluster with managed worker nodes.
-🔹 Dynamic, multi-environment workspace architectures deploying to Dev, Staging, and Prod.
-
-Today, I launched a single codebase to deploy three completely isolated environments—each with custom VPCs, distinct firewall rules, and scaled compute sizing—all using Terraform workspaces!
-
-Infrastructure engineering has never felt so powerful. A huge thank you to Shubham Londhe and the TrainWithShubham community for the mentorship! 🌟
-
-On to the next challenge! 💪
-
-#90DaysOfDevOps #TerraWeek #IaC #Terraform #AWS #DevOps #CloudEngineering #Automation #CloudArchitecture #TrainWithShubham
-```
-
----
-
-*Outstanding job completing the TerraWeek Challenge! You've built a strong foundation in modern cloud automation and Infrastructure as Code. Keep exploring and keep learning!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

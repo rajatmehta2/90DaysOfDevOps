@@ -718,25 +718,6 @@ This screenshot displays the successfully created S3 bucket and active EC2 insta
 
 ---
 
-## 📢 Share Your Journey!
-
-Ready to share your IaC milestone with the community? Copy and paste this post to LinkedIn:
-
-```text
-🚀 Day 61 of my #90DaysOfDevOps challenge is complete! I'm officially starting my Infrastructure as Code (IaC) journey! 🛠️☁️
-
-Today, I took my first steps with HashiCorp Terraform:
-🔹 Installed Terraform and configured the AWS CLI.
-🔹 Created a fully declarative main.tf configuration containing an Amazon S3 Bucket and EC2 instance.
-🔹 Explored the core Terraform lifecycle: init, plan, apply, and destroy.
-🔹 Deep-dived into the terraform.tfstate engine to understand state mapping and prevent drift.
-
-Provisioning and teardown of complex cloud networks in seconds using code is a game changer! Excited to dive into variables and multi-environment templates next.
-
-#90DaysOfDevOps #TerraWeek #IaC #HashiCorp #Terraform #AWS #CloudComputing #DevOps
-```
-
----
-
-*Keep up the high energy! See you on Day 62!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

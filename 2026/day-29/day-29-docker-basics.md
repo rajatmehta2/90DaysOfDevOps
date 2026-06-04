@@ -529,20 +529,8 @@ As I expand my skills from system administration to large-scale application deli
 
 ---
 
-## 🏁 Submission & Learn In Public
+Day 29 Complete 🐳🚀
 
-Now that the initial Docker lab is complete, I will sync these logs with my main repository and share the progress:
-
-1. **Commit changes:**
-   ```bash
-   git add day-29-docker-basics.md
-   git commit -m "docs: complete Day 29 Docker Basics guide"
-   git push origin main
-   ```
-
-2. **Learn in Public:**
-   Share container run screenshots on LinkedIn or X (Twitter) using these hashtags:
-   `#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#Docker` `#Containerization`
-
----
-**TrainWithShubham** | Day 29 Complete 🐳🚀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

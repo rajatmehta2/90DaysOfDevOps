@@ -630,16 +630,6 @@ Side-by-side split screen correlating resource metrics spikes with the raw appli
 
 ---
 
-## 📣 Share Your Progress!
-Share your accomplishments with the community on LinkedIn:
-
-> "Day 75 of the #90DaysOfDevOps Challenge: Reached unified observability with Logs and Metrics! 🚀
-> 
-> Today, I deployed Grafana Loki and Promtail to collect and aggregate Docker container logs. I learned why Loki is so cost-effective compared to traditional ELK stacks because of its 'labels-first' indexing design. I also wrote advanced LogQL queries to filter logs, and set up a Grafana split screen showing real-time CPU spikes on one side and container log streams on the other. Clicking on a metric spike now automatically synchronizes and isolates the exact logs at that microsecond!
-> 
-> Unifying metrics and logs is a huge milestone for production reliability! 📈🪵
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Observability #Grafana #Loki #Promtail #Docker #LogQL #SRE"
-
----
-**TrainWithShubham** | Day 75 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

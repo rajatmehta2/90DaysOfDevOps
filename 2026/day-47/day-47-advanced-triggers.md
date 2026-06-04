@@ -485,11 +485,6 @@ Today we explored advanced automation workflows:
 - **Pipeline Orchestration:** Connect distinct pipelines using `workflow_run` for asynchronous chaining or `workflow_call` for dry modular templates.
 - **External API Triggers:** Initiate automated pipelines from external monitoring tools and Slack bots using `repository_dispatch`.
 
----
-
-*Keep up the amazing momentum! You are building production-grade CI/CD pipelines that emulate enterprise standards!*
-
-**#90DaysOfDevOps** **#DevOpsKaJosh** **#TrainWithShubham**
-
----
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

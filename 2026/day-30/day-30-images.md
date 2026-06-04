@@ -660,20 +660,8 @@ The screenshot below shows the final disk usage audit showing the total reclaime
 
 ---
 
-## 🏁 Submission & Learn In Public
+Day 30 Complete 🐳🚀
 
-Now that the Day 30 Docker image deep-dive lab is successfully complete, we commit and push the logs to the main GitHub repository:
-
-1. **Commit and Push changes:**
-   ```bash
-   git add day-30-images.md
-   git commit -m "docs: complete Day 30 Docker Images and Container Lifecycle notes"
-   git push origin main
-   ```
-
-2. **Learn in Public:**
-   Share your learnings about image layers, Alpine vs. Ubuntu base footprints, or container lifecycle states on LinkedIn or X (Twitter) using these hashtags:
-   `#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#Docker` `#DevOps` `#Containerization`
-
----
-**TrainWithShubham** | Day 30 Complete 🐳🚀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

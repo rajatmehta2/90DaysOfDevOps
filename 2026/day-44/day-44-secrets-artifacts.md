@@ -528,26 +528,6 @@ Let's see how `actions/cache@v4` stores and restores python dependencies:
 3. **Artifact Sharing**: Using `upload-artifact` and `download-artifact` creates clear boundaries between compilation and testing jobs, supporting modular, decoupled workflows.
 4. **Caching Efficiencies**: When configuring caches, always use reliable hashing targets (`hashFiles('**/requirements.txt')`) to avoid "cache poison" where dependencies change but the cache continues supplying stale library versions.
 
----
-
-## 📱 Learn in Public
-
-Share your progress with the community! Use this social-media-ready template to post on LinkedIn and Twitter:
-
-```text
-Day 44 of the #90DaysOfDevOps challenge completed! Today, I elevated my CI/CD skills by implementing robust Secrets Management, Artifact preservation, real-world Python testing, and Caching mechanisms! 🛡️🚀
-
-What I accomplished today:
-1. Engineered secure Secret Ingresses in GitHub Settings, verifying automatic masking mechanisms in workflow logs to protect sensitive credentials.
-2. Mapped enterprise-level variables (DOCKER_USERNAME & DOCKER_TOKEN) safely into step-scoped environment properties.
-3. Built dynamic inter-job filesharing using actions/upload-artifact@v4 and actions/download-artifact@v4, successfully archiving test execution data.
-4. Programmed a real-world Python validation script tests/validate_config.py inside the pipeline, completing the classic "Red-to-Green" CI test cycle!
-5. Implemented caching mechanisms using actions/cache@v4 to speed up dependencies restoration, accelerating pipeline runtime by over 70%!
-
-Securing, validating, and optimizing workflows are key to enterprise pipeline reliability. Moving towards automated deployments next! ⚡
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitHubActions #CICD #PipelineSecurity #DevOps #SoftwareEngineering #Automation #CloudSecurity
-```
-
----
-*Created in collaboration with **TrainWithShubham**.*
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

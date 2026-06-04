@@ -376,6 +376,6 @@ Instead of storing long-lived cloud credentials (like AWS IAM User Access Keys) 
 
 Today we successfully added **robust security guardrails** to our CI/CD pipeline! We converted a simple, fast deployment script into a secured, professional **DevSecOps workflow**. Security scanning is now part of the pipeline's core logic: checking code push constraints, verifying dependency changes in Pull Requests, and continuously scanning Docker images for runtime exploits.
 
-🚀 *On to the next stage of our 90 Days of DevOps journey!*
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#DevSecOps` `#GitHubActions`
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

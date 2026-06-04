@@ -624,27 +624,6 @@ Plan output showing the successful detection of manual changes made in the AWS C
 
 ---
 
-## 📢 Share Your Journey!
-
-Copy and paste this message to LinkedIn to showcase your milestone:
-
-```text
-🚀 Day 64 of my #90DaysOfDevOps challenge complete! Mastered Terraform State Management & Advanced Operations! 🛠️🔒
-
-Today, I took a deep dive into the core engine of HashiCorp Terraform—the state file—and implemented enterprise-grade safety patterns:
-🔹 Migrated state from risky local storage to a highly secure AWS S3 Remote Backend.
-🔹 Implemented DynamoDB State Locking to protect collaborative runs from concurrent writes and corruption.
-🔹 Tested locking mechanisms and learned how to resolve stale locks using force-unlock.
-🔹 Brought existing, manually created AWS S3 buckets under HCL control using terraform import.
-🔹 Performed state surgery with state mv and state rm to refactor and hand off resources without downtime.
-🔹 Simulated and resolved infrastructure drift by reconciling manual changes with our declarative codebase.
-
-With a secure remote backend and full control over state operations, our infrastructure pipelines are now collaborative, secure, and resilient!
-
-#90DaysOfDevOps #TerraWeek #IaC #Terraform #AWS #DevOps #CloudEngineering #Automation #S3 #DynamoDB #StateManagement #Refactoring
-```
-
----
-
-*Awesome work on completing Day 64! We are building solid, collaborative infrastructure foundations!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

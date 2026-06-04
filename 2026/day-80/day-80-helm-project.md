@@ -789,20 +789,6 @@ Deleting cluster "tws-cluster"...
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Completed this major milestone? Share it on LinkedIn:
-
-> "Day 80 of #90DaysOfDevOps accomplished! 🚀 Today, I brought the Helm block to a close by building a full Multi-Environment (Dev, Staging, Prod) GitOps CD Pipeline for our AI-BankApp stack (Spring Boot + MySQL + Ollama AI).
->
-> 🔹 Parameterized environment states using isolated values configurations.
-> 🔹 Integrated pre-install Helm validation hooks & custom health testing suites.
-> 🔹 Integrated Helm into GitHub Actions CI workflows and automated ArgoCD application deployments.
-> 🔹 Managed packaging and distribution structures natively.
->
-> One Helm Chart, three isolated environments, zero duplicate configurations! 
->
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Kubernetes #Helm #ArgoCD #GitOps #GitHubActions #CI/CD #SRE"
-
----
-**Prepared with ❤️ by Rajat Mehta** | [GitHub Repo](https://github.com/rajatmehta2/90DaysOfDevOps)
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -646,16 +646,6 @@ Showing resource usage metrics collected by cAdvisor across individual running c
 
 ---
 
-## 📣 Share Your Progress!
-Share your accomplishments with the community on LinkedIn:
-
-> "Day 74 of the #90DaysOfDevOps Challenge: Completed a fully containerized Observability Stack! 🚀
-> 
-> Today, I expanded my Prometheus setup by adding Node Exporter for host-level metrics and cAdvisor for Docker container metrics. I set up Grafana as the visualization engine, and designed a custom DevOps dashboard monitoring CPU, memory, container footprints, and disk usage. I also automated datasource provisioning using YAML files (GitOps) and imported pre-built community dashboards (ID 1860 and 193).
-> 
-> Multi-layer metrics gathering and visualization is now complete! 📈
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Prometheus #Grafana #Docker #cAdvisor #NodeExporter #GitOps #SRE"
-
----
-**TrainWithShubham** | Day 74 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

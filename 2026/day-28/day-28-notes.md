@@ -531,4 +531,9 @@ The diagram below maps the continuous validation of command execution outputs, t
 ![Revision Roadmap & Assessment Metrics](revision_roadmap.png)
 
 ---
-**TrainWithShubham** | Day 28 Complete 🚀
+
+Day 28 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -480,26 +480,6 @@ Here is a visual validation of our Kubernetes Persistent Volumes and Claims labs
 
 ---
 
-## 📣 Share Your Learning!
-
-Celebrate completing Day 55 of the challenge by sharing your progress on social media:
-
-```text
-I just completed Day 55 of the #90DaysOfDevOps challenge! 🚀
-
-Today I tackled Kubernetes Storage: Persistent Volumes (PV) and Claims (PVC). Here is what I covered:
-- Proved why containers are ephemeral using emptyDir and demonstrated data loss.
-- Implemented Static Provisioning by building a PersistentVolume and binding it with a PersistentVolumeClaim.
-- Confirmed that data survives Pod deletion and rescheduling successfully.
-- Explored Dynamic Provisioning using StorageClasses, automating volume creation seamlessly.
-- Learned access modes (RWO, ROX, RWX) and reclaim policies (Retain, Delete).
-
-All configuration manifests and step-by-step terminal outputs are pushed to my GitHub.
-
-#90DaysOfDevOps #Kubernetes #DevOps #Storage #CloudNative #TrainWithShubham #DevOpsKaJosh
-```
-
----
-
-**Awesome job completing today's lab! Keep pushing forward!**  
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

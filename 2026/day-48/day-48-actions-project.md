@@ -642,27 +642,6 @@ To take this enterprise CI/CD pipeline even further, we can implement the follow
 3. **🎯 GitOps (ArgoCD & Kubernetes) Integration**: Transition deployment steps to a pull-based model using GitOps tools to deploy directly onto a Kubernetes cluster.
 4. **🔑 Keyless Image Signing (Cosign)**: Generate cryptographic signatures for images pushed to Docker Hub, verifying the origin and integrity of our software supply chain.
 
----
-
-## 🤝 Let's Connect & Learn in Public!
-
-I have shared my journey and pipeline architecture with the DevOps community on LinkedIn:
-
-* **Post Draft**: 
-  > 🚀 **Milestone Unlocked! Built my First Production-Grade GitHub Actions CI/CD Pipeline!**
-  >
-  > Today, as part of the #90DaysOfDevOps challenge, I completed my capstone project: a fully modular and enterprise-ready CI/CD pipeline using **GitHub Actions**.
-  >
-  > Here is a quick breakdown of what I built:
-  > 📦 **Modular Reusable Workflows** for building, testing, and Docker compilation.
-  > 🛡️ **DevSecOps Gating** using Aqua Security's Trivy scanner to fail builds containing CRITICAL vulnerabilities.
-  > 🔐 **Environment Protections** with manual approval requirements for production updates.
-  > ⏰ **Automated Scheduled Runtimes** to test and verify health status summaries automatically.
-  > 
-  > Check out the architecture and full configurations in my notes below!
-  > Let's discuss modern pipeline best practices! 👇
-  > 
-  > `#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#DevSecOps` `#CICD` `#GitHubActions`
-
----
-**TrainWithShubham** | Happy Learning! 🚀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

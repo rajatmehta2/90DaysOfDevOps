@@ -592,30 +592,8 @@ main
 
 ---
 
-## 📢 Learn in Public & Engagement
+Day 18 Complete 🌀
 
-### 🎓 Share Progress
-Bash functions and strict mode safeguards are what separate basic shell commands from production-ready DevOps automation. I am excited to share my progress for **Day 18** of the **#90DaysOfDevOps** challenge!
-
-* **Today's Key Focus:** Mastered modular Bash Functions, Local Scoping rules, Return Status codes, and Strict Mode safeguards.
-* **Lab Milestones:**
-  - Coded custom functions using local parameters (`functions.sh`).
-  - Developed cross-platform physical diagnostics utilizing function exit codes and fallback logic (`disk_check.sh`).
-  - Isolated strict mode behaviors (`set -euo pipefail`) under subshell environments (`strict_demo.sh`).
-  - Demonstrated variable scoping isolation comparing local vs global leaks (`local_demo.sh`).
-  - Formulated a comprehensive **System Performance Reporter** (`system_info.sh`) protected from SIGPIPE (141) pipe traps using `awk` stream limits.
-* **Join the Conversation on LinkedIn:**
-  - `#90DaysOfDevOps`
-  - `#DevOpsKaJosh`
-  - `#TrainWithShubham`
-
----
-
-## 🎨 Visual Lab Walkthrough Screenshot
-
-The screenshot below demonstrates the running diagnostics of `system_info.sh` under Apple Silicon macOS. It shows the cross-platform diagnostic queries executing successfully with a proper exit status under `set -euo pipefail` conditions:
-
-![Clean Apple macOS terminal showing day-18 script diagnostic reporting output](day-18-scripting.png)
-
----
-**TrainWithShubham** | Day 18 Complete 🌀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

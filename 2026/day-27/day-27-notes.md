@@ -371,4 +371,9 @@ To maintain a stellar developer presence:
 4. **Audit Frequently:** Before adding a directory or code block, make sure sensitive keys and credentials are included in `.gitignore` files.
 
 ---
-**TrainWithShubham** | Day 27 Complete 🚀
+
+Day 27 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

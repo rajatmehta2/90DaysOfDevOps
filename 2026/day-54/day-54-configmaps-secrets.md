@@ -433,25 +433,6 @@ Here is a visual validation of our ConfigMap and Secret labs successfully execut
 
 ---
 
-## 📣 Share Your Learning!
-
-Keep the momentum going by sharing your journey on social platforms:
-
-```text
-I just completed Day 54 of the #90DaysOfDevOps challenge! 🚀
-
-Today I dove deep into Kubernetes ConfigMaps and Secrets. I learned:
-- How to externalize application configuration seamlessly.
-- The differences between environment variable injection and volume mounts.
-- How volume-mounted ConfigMaps dynamically update without pod restarts.
-- Why base64 is purely encoding (not encryption) and how to secure production secrets!
-
-Manifests and complete setup logs are documented on my GitHub.
-
-#90DaysOfDevOps #Kubernetes #CloudNative #DevOpsKaJosh #TrainWithShubham
-```
-
----
-
-**Keep up the great work!**  
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

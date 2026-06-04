@@ -227,3 +227,7 @@ As a DevOps engineer, you will regularly inspect active files. Here are two crit
 ---
 
 Day 06 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

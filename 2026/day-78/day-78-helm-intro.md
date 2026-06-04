@@ -494,18 +494,6 @@ k8s/
 
 ---
 
-## 📣 Share Your Progress!
-Share your milestone achievements on LinkedIn to showcase your learnings:
-
-> **Day 78 of the #90DaysOfDevOps Challenge!** 🚀
-> 
-> Today, I transitioned from managing raw Kubernetes manifests to using **Helm**, the K8s package manager! ☸️
-> 
-> I learned how Helm templates, packages, and versions manifests into reusable units called **Charts**. I installed the Helm CLI, spun up a Kind cluster, and successfully deployed a production-grade MySQL database using the Bitnami chart registry. I configured it declaratively using `values.yaml`, upgraded the application state, and walked through a safe revision rollback using `helm rollback`!
-> 
-> I also analyzed the internal chart structure to understand Go templating and prep for wrapping the AI-BankApp into a custom Helm chart tomorrow.
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Kubernetes #Helm #CloudNative #DevOps #SRE #StatefulSet
-
----
-**TrainWithShubham** | Day 78 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

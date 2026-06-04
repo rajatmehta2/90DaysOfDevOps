@@ -282,3 +282,7 @@ scp -i KEY_FILE_NAME.pem ubuntu@YOUR_INSTANCE_PUBLIC_IP_OR_DNS:~/nginx-logs.txt 
 ---
 
 Day 08 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

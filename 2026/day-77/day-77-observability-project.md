@@ -767,27 +767,6 @@ docker compose down -v
 
 ---
 
-## 📣 Share Your Journey!
-Share your progress and insights with your professional network on LinkedIn:
-
-```text
-🚀 Day 77: Completed the Observability Capstone Project -- Building a Full-Stack Production Monitoring Pipeline! 🚀
-
-Over the last 5 days of the #90DaysOfDevOps challenge, I went from learning observability fundamentals to orchestrating a complete production-ready reference architecture in Docker Compose!
-
-What I built and validated today:
-1️⃣ Prometheus & Node Exporter to capture host OS health metrics.
-2️⃣ cAdvisor for deep container runtime analytics.
-3️⃣ Grafana Loki & Promtail to aggregate and query stdout logs using LogQL.
-4️⃣ OpenTelemetry Collector to ingest and process distributed OTLP traces.
-5️⃣ A unified Grafana "Production Overview" Dashboard—bringing metrics, logs, and traces into a single pane of glass!
-
-Understanding how to construct robust, open-source monitoring pipelines is a game-changer for maintaining reliable production workloads. Next stop: Alerting and high availability!
-
-Special thanks to Shubham Londhe for this incredible curriculum.
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Observability #Prometheus #Grafana #Loki #OpenTelemetry #SRE #DockerCompose #CloudNative
-```
-
----
-**TrainWithShubham** | Day 77 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

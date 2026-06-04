@@ -765,25 +765,8 @@ The terminal logs below capture the BuildKit caching validation, illustrating ho
 
 ---
 
-## 🏁 Submission & Learn in Public
+Day 31 Complete 🐳🚀
 
-Congratulations! You have mastered the core techniques of writing high-performance Dockerfiles, establishing robust configuration environments, managing process entrypoints, and structuring build contexts.
-
-1. **Commit and Push changes to your GitHub fork:**
-   ```bash
-   # Add all files to staging
-   $ git add my-first-image/ my-instructions-demo/ cmd-vs-entrypoint/ simple-web-app/ day-31-dockerfile.md
-   
-   # Commit with a professional message
-   $ git commit -m "docs: complete Day 31 Dockerfile build automation and optimization labs"
-   
-   # Push to remote main branch
-   $ git push origin main
-   ```
-
-2. **Learn in Public:**
-   Share your custom-built web application dashboard or your CMD vs ENTRYPOINT deep-dive breakdown on LinkedIn or X (Twitter) using these active hashtags:
-   `#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#Docker` `#Dockerfile` `#Containerization` `#DevOps`
-
----
-**TrainWithShubham** | Day 31 Complete 🐳🚀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

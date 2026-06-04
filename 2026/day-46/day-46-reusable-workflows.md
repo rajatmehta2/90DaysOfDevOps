@@ -371,11 +371,6 @@ Below is the verified visualization of the **Caller Workflow** calling the **Reu
 - **Workflow Outputs:** Map outputs upward through steps -> jobs -> workflows using `$GITHUB_OUTPUT`.
 - **Composite vs. Reusable:** Use **Composite Actions** for simple scripts, setup routines, and tools. Use **Reusable Workflows** for complex multi-job deployment blueprints.
 
----
-
-*Keep crushing your goals! Today was a massive step towards enterprise-grade automation.*
-
-**#90DaysOfDevOps** **#DevOpsKaJosh** **#TrainWithShubham**
-
----
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

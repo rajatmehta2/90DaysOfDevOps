@@ -625,12 +625,6 @@ CLI capture running `multi-play.yml`, showing Ansible switching target hosts sea
 
 ---
 
-## 📣 Share Your Progress!
-Ready to share your automation milestone with the global community on LinkedIn? Copy and paste the template below:
-
-> "Day 69 of the #90DaysOfDevOps Challenge: Mastered Ansible Playbooks! Wrote my first declarative YAML playbooks, practiced the 7 essential modules, and set up dynamic Handlers to safely trigger service restarts only when configurations change. Running playbooks twice and watching the second run result in 0 changes is a beautiful demonstration of idempotency in action! 🚀
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Ansible #Playbooks #Automation #IaC #SystemOrchestration"
-
----
-**TrainWithShubham** | Day 69 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

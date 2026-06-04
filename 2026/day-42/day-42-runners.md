@@ -454,27 +454,6 @@ Push this modification. The orchestrator will dynamically route the build to the
 * **Persistent Workspaces**: Unlike ephemerally spawned GitHub-hosted environments that wipe clean, self-hosted environments keep persistent workspaces. You must handle manual workspace cleanups or configure run cleaners to prevent disk saturation.
 * **Security Scoping**: Avoid running public fork pull request pipelines on private self-hosted runners unless they run on isolated, single-use containerized runners to avoid host-level server penetration.
 
----
-
-## 📱 Learn in Public
-
-Share your hands-on deployment journey with the developer community!
-
-```text
-Day 42 of the #90DaysOfDevOps challenge completed! Today, I explored GitHub Actions Runner Architectures, executing cloud jobs on my own server! 🚀
-
-What I accomplished today:
-1. Designed parallel multi-platform pipelines running simultaneously across Ubuntu, Windows, and macOS cloud runners.
-2. Investigated GitHub-hosted runner system dependencies to analyze the pre-installed software layers.
-3. Configured and provisioned a private Linux self-hosted runner from scratch on a cloud VPS server.
-4. Installed, configured, and registered the runner agent persistently using systemd background service managers.
-5. Deployed a custom workflow targeting `runs-on: self-hosted`, verifying directory structural outputs and local file persistence on remote server disks.
-6. Handled advanced workload scheduling and execution boundaries using specific Runner Label configurations.
-
-Running your own CI/CD engine on private infrastructure is a core skill for building cost-effective, scalable, and highly secure automation pipelines! ⚡
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitHubActions #CI/CD #DevOps #InfrastructureAsCode #CloudComputing #Automation
-```
-
----
-*Created in collaboration with **TrainWithShubham**.*
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -754,12 +754,6 @@ Our unified `site.yml` playbook executing across our multi-tier infrastructure:
 
 ---
 
-## 📣 Share Your Progress!
-Share your progress with the community on LinkedIn:
-
-> "Day 71 of the #90DaysOfDevOps Challenge: Reached a major milestone in my Ansible journey! Today I transitioned from writing monolithic playbooks to structuring production-ready, scalable codebases. I built custom Ansible Roles, utilized Jinja2 templates for dynamic configurations, integrated community-supported roles from Ansible Galaxy, and secured database credentials using Ansible Vault.
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Ansible #InfrastructureAsCode #SystemsEngineering #DevOps #Security"
-
----
-**TrainWithShubham** | Day 71 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

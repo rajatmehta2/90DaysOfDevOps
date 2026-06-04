@@ -253,13 +253,6 @@ Below is a graphical representation of the verification tests running locally on
 - [x] **Hands-on Weak Areas**: Deep-dived into Node.js runtime security, multi-stage builds, and Compose health check synchronization.
 - [x] **Cheat Sheet Integration**: Created a highly practical reference sheet in `docker-cheatsheet.md`.
 
----
-
-## 🔗 Connect with me!
-
-Let's discuss and learn together! Feel free to connect and share your revision methods:
-
-* **LinkedIn**: [Rajat Mehta](https://linkedin.com/in/rajatmehta)
-* **GitHub**: [@rajatmehta2](https://github.com/rajatmehta2)
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#DockerRevision` `#Containerization`
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

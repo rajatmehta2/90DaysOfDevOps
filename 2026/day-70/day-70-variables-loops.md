@@ -644,12 +644,6 @@ Output logs showing registered variables writing structured `/tmp/server-report-
 
 ---
 
-## 📣 Share Your Progress!
-Share today's milestone with the community on LinkedIn:
-
-> "Day 70 of the #90DaysOfDevOps Challenge: Made my Ansible playbooks completely smart and adaptive! Configured group_vars and host_vars, harnessed Ansible Facts for dynamic context-aware automation, utilized conditionals to control runtime tasks, optimized loops, and built a custom Server Health Reporting playbook. Scaling infrastructure is simple when the code dynamically adapts. 🚀
-> 
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Ansible #InfrastructureAsCode #DevOps #SystemsEngineering #CloudComputing"
-
----
-**TrainWithShubham** | Day 70 of 90 Days of DevOps
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -353,25 +353,8 @@ Through this lab, I mastered three critical infrastructure management concepts:
 
 ---
 
-## 📢 Learn in Public & Community Engagement
+Day 13 Complete 💾
 
-### 🎓 Share Progress
-Infrastructure resilience depends on robust storage systems! I am thrilled to share my progress for **Day 13** of the **#90DaysOfDevOps** challenge:
-
-* **Today's Key Focus:** Deep-dived into Linux Volume Management (LVM), configuring and extending storage layers on-the-fly.
-* **Lab Milestones:** Prepared a virtual loop device, registered a Physical Volume, gathered them in a Volume Group, partitioned a Logical Volume, and performed an on-line filesystem extension.
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-
-## 📸 Verification Screenshot
-
-The screenshot below documents the step-by-step commands and structural output verifying the LVM setup, disk format, mounting, and dynamic space extension:
-
-![LVM Setup and Dynamic Volume Extension Verification](lvm_verification.png)
-
----
-**TrainWithShubham** | Day 13 Complete 💾
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

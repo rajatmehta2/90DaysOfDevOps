@@ -502,28 +502,6 @@ Here is a visual validation of our Kubernetes Resource Limits and Health Probes 
 
 ---
 
-## 📣 Share Your Learning!
-
-Celebrate completing Day 57 of the challenge by sharing your progress on social media:
-
-```text
-I just completed Day 57 of the #90DaysOfDevOps challenge! 🚀
-
-Today I covered Kubernetes Resource Management & Self-Healing:
-- Set up Resource Requests (scheduler placement guarantees) and Limits (Linux cgroups hard ceilings).
-- Analyzed Kubernetes Quality of Service (QoS) classes: Guaranteed, Burstable, and BestEffort.
-- Simulating a memory limits violation, observing an OOMKilled container event with Exit Code 137.
-- Explored over-allocation scheduling blocks resulting in "Pending" status and insufficient resource scheduler messages.
-- Configured a Liveness Probe (using exec) to dynamically monitor container responsiveness and trigger self-healing restarts.
-- Configured a Readiness Probe (using httpGet) that successfully routes traffic out of unhealthy containers without triggering unnecessary restarts.
-- Configured a Startup Probe to provide slow-starting applications with a protective startup budget window.
-
-All manifest files and lab commands are pushed to my GitHub.
-
-#90DaysOfDevOps #Kubernetes #DevOps #QoS #Docker #SelfHealing #SiteReliabilityEngineering #CloudNative #TrainWithShubham #DevOpsKaJosh
-```
-
----
-
-**Awesome job completing today's lab! Keep pushing forward!**  
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

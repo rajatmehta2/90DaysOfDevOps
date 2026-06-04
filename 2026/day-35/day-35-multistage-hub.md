@@ -604,32 +604,8 @@ To transition from baseline capability to engineering excellence, we implemented
 
 ---
 
-## 🏁 Submission & Learn in Public
+Day 35 Complete 🐳🚀
 
-Congratulations! You have completed advanced Docker image optimization labs, implemented secure multi-stage workflows, configured non-root sandboxes, and successfully distributed your images to the public Docker Hub registry!
-
-### 1. Commit and Push Changes to Your GitHub Fork
-
-Let's push our highly optimized configuration, source files, and lab logs directly to GitHub:
-
-```bash
-# Stage all lab files
-$ git add main.go Dockerfile Dockerfile.single day-35-multistage-hub.md
-
-# Commit with a clear description
-$ git commit -m "docs: complete Day 35 Multi-Stage Builds, size comparison optimization and Docker Hub registry push"
-
-# Push to your remote fork repository
-$ git push origin main
-```
-
----
-
-### 2. Learn in Public
-
-Share your Day 35 image optimization results on LinkedIn or X (Twitter) to highlight the **98.5% size optimization**! Show the impressive difference between single-stage and multi-stage container designs. Use these hashtags to share your journey:
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham` `#Docker` `#ContainerSecurity` `#MultiStageBuilds` `#GoLang` `#DockerHub`
-
----
-**TrainWithShubham** | Day 35 Complete 🐳🚀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

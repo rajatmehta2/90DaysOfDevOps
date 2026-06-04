@@ -644,26 +644,6 @@ Shows the successful reverse-order deletion of the entire infrastructure.
 
 ---
 
-## 📢 Share Your Journey!
-
-Copy and paste this message to LinkedIn to showcase your milestone:
-
-```text
-🚀 Day 62 of my #90DaysOfDevOps challenge complete! Deployed a complete AWS networking and compute stack using Terraform! 🛠️☁️
-
-Today I leveled up on Infrastructure as Code by focusing on dependencies, providers, and lifecycle states:
-🔹 Explored AWS provider version pinning syntax (~> 5.0 vs >= 5.0 vs = 5.0.0).
-🔹 Built a complete VPC networking stack (VPC, public subnet, route tables, internet gateway, and route associations).
-🔹 Deep-dived into Implicit vs. Explicit dependencies (using depends_on) to coordinate bucket storage and compute timing.
-🔹 Mastered Terraform lifecycle configurations (create_before_destroy, prevent_destroy, ignore_changes) for resilient production state control.
-🔹 Analyzed the Directed Acyclic Graph (DAG) by visualizing the infrastructure architecture via terraform graph.
-
-Understanding how Terraform connecting the dots across cloud networks in reverse dependency order is a game changer for zero-downtime rollouts!
-
-#90DaysOfDevOps #TerraWeek #IaC #HashiCorp #Terraform #AWS #VPC #DevOps #CloudComputing #InfrastructureAsCode
-```
-
----
-
-*Awesome job on completing Day 62! Let's continue building on Day 63!*
-**TrainWithShubham**
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

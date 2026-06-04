@@ -399,28 +399,6 @@ Agentic AI acts as the connective tissue that bridges every single concept cover
 
 ---
 
-## 📢 Section 9: Sharing Your Learning in Public
-
-Share your DevOps AIOps journey on LinkedIn! Here is a professionally structured, high-impact template ready to post:
-
-```text
-🚀 DevOps + AIOps: Day 89 of the #90DaysOfDevOps Challenge!
-
-Today, I took my AI-driven DevOps journey to the next level by building KubeHealer—a production-grade self-healing agent that monitors, diagnoses, and autonomously repairs broken Kubernetes clusters!
-
-What I built and achieved today:
-1. 💡 AI-Powered Operations: Engineered an SRE agent that scans namespaces for failing pods, extracts real-time event logs, and leverages Anthropic Claude 3.5 Sonnet to construct precise, low-level yaml patches.
-2. 🔄 Durable Execution with Temporal: Integrated the Temporal SDK to orchestrate the agent's workflows. If the healer worker crashes mid-diagnosis, Temporal records the state and resumes execution from the exact interrupted step upon restart—ensuring zero lost progress.
-3. 🛡️ Robust Production Guardrails: Enforced human-in-the-loop validation, namespace scope limits, and audit trails.
-4. 💥 Real-World Diagnostic Verification: Deployed three intentionally broken apps (an image typo, an OOM crash, and a missing ConfigMap). The agent successfully patched the first two automatically and correctly escalated the third to a human operator.
-
-Self-healing clusters are no longer science fiction. By combining durable workflow execution with LLM reasoning, we can build robust, fail-safe systems that handle routine infrastructure incidents autonomously.
-
-Huge thanks to @TrainWithShubham for the exceptional curriculum!
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #AIOps #Kubernetes #Temporal #AgenticAI #SRE #Docker #SelfHealing #ClaudeAI
-```
-
----
 **Happy Learning!**
-**TrainWithShubham**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

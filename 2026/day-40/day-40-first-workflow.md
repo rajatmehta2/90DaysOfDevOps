@@ -284,21 +284,6 @@ Below is the verified, premium-grade dashboard screenshot of our successful pipe
 * **GitHub Actions Contexts:** Contexts like `${{ github.ref_name }}` and `${{ runner.os }}` allow workflows to dynamically capture and use runtime variables without hardcoding.
 * **Fail-Fast Mechanism:** By default, GitHub Actions stops processing steps inside a job as soon as a single command throws a non-zero exit status, protecting down-stream operations (like deployments) from running with invalid code.
 
----
-
-## 📱 Learn in Public
-
-Share your first successful pipeline run and tell the world about your DevOps progress!
-
-```text
-Day 40 of the #90DaysOfDevOps challenge completed! Today, I wrote and executed my very first GitHub Actions pipeline. 
-
-Inside this pipeline, I configured custom triggers, runner environments (Ubuntu-latest), utilized setup contexts to fetch branch names and operating systems, and even broke the pipeline on purpose to master failure analysis and logs troubleshooting. 
-
-The green checkmark hits different! 🚀
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitHubActions #CICD #Automation #DevOps
-```
-
----
-*Created in collaboration with **TrainWithShubham**.*
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

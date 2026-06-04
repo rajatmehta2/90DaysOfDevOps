@@ -115,5 +115,7 @@ Below is the visual confirmation showing the Git terminal workflow and directory
 > I commit to checking in every single day, building in public, and executing this blueprint to elevate my engineering career.
 
 ---
-**Prepared by:** [Rajat Mehta](https://github.com/rajatmehta2)  
-**Initiative:** #90DaysOfDevOps | #DevOpsKaJosh | #TrainWithShubham
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

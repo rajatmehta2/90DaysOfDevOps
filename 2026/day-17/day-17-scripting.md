@@ -509,29 +509,8 @@ echo "Safe script execution completed successfully! 🟢"
 
 ---
 
-## 📢 Learn in Public & Engagement
+Day 17 Complete 🌀
 
-### 🎓 Share Progress
-Loops, parameters, and error handling are what separate simple commands from professional DevOps automation scripts! I'm thrilled to share my progress for **Day 17** of the **#90DaysOfDevOps** challenge:
-
-* **Today's Key Focus:** Mastered Shell Scripting Loops, CLI Arguments, and structural Error Handling!
-* **Lab Milestones:** 
-  - Designed custom shell iterators (`for` loop over fruit arrays and sequence bounds) and interactive countdown routines (`while` loop with input validations).
-  - Built parameterized CLI handlers parsing arguments (`$1`, `$#`, `$@`) with strict usage guides.
-  - Developed a robust, OS-aware multi-package installer (`install_packages.sh`) running security root checks ($EUID).
-  - Implemented exit-on-error behavior (`set -e`) in a filesystem modifier (`safe_script.sh`), safely bypassed via `||` logical OR gates.
-* **Join the Journey on LinkedIn:**
-  - `#90DaysOfDevOps`
-  - `#DevOpsKaJosh`
-  - `#TrainWithShubham`
-
----
-
-## 🎨 Visual Lab Walkthrough Screenshot
-
-The screenshot below captures the execution profile, terminal rendering, and successful output capture when running the `count.sh` sequence printing loop and the interactive `countdown.sh` utility:
-
-![Sleek macOS terminal mockup showing count.sh and countdown.sh executions](day-17-scripting.png)
-
----
-**TrainWithShubham** | Day 17 Complete 🌀
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

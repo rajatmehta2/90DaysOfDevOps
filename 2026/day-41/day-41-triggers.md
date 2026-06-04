@@ -373,26 +373,6 @@ Here is the visual proof showing the failed job highlighted while the others con
 * **Matrix Power:** Multi-dimensional matrix builds multiply runtimes by systems, allowing enormous test suites to run parallelly with minimal YAML code.
 * **Exclude & Fail-Fast Control:** `exclude` lets you filter out invalid environments, and setting `fail-fast: false` guarantees that one OS failure doesn't swallow valuable test feedback from other platforms.
 
----
-
-## 📱 Learn in Public
-
-Share your matrix build journey with the DevOps community!
-
-```text
-Day 41 of the #90DaysOfDevOps challenge completed! Today, I shifted from single-event triggers to advanced enterprise pipeline patterns. 🚀
-
-What I accomplished today:
-1. Created automated PR Check workflows using branch targeting configurations.
-2. Scheduled UTC-based nightly automation using standard POSIX cron definitions.
-3. Designed interactive manual pipelines with choice and string inputs via workflow_dispatch.
-4. Set up high-scale Matrix Builds to execute test environments in parallel across multiple Python runtimes and OS platforms (Ubuntu & Windows).
-5. Mastered runner cost control and diagnostic configuration using the `exclude` and `fail-fast` strategies.
-
-Parallel executions in the cloud represent a massive power upgrade in CI/CD efficiency! ⚡
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitHubActions #Automation #CICD #SoftwareTesting #DevOps
-```
-
----
-*Created in collaboration with **TrainWithShubham**.*
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

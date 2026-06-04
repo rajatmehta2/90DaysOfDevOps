@@ -247,8 +247,6 @@ If you are starting Day 1 tomorrow, keep these 3 laws in mind:
 
 ## 🤝 The Official LinkedIn Graduation Announcement
 
-Ready to copy-paste template for sharing this monumental milestone on social platforms:
-
 ```text
 🚀 I HAVE GRADUATED! I just completed the official #90DaysOfDevOps challenge! 🎓
 
@@ -265,11 +263,9 @@ The most important takeaway: DevOps isn't just about a specific tool. It’s abo
 
 A massive thank you to Shubham Londhe (@TrainWithShubham) and the incredible global community for the constant motivation, guidance, and pair-programming sessions.
 
-📁 You can view my complete codebase, interactive configuration files, and architectural designs here: [Insert Your GitHub Repository URL]
+📁 You can view my complete codebase, interactive configuration files, and architectural designs here: [https://github.com/rajatmehta2/90DaysOfDevOps/tree/master/2026]
 
 What's next for me? Deepening my Kubernetes knowledge, practicing Chaos Engineering, and tackling the CKA exam!
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Kubernetes #GitOps #Terraform #CloudEngineering #SelfHealingDevOps
 ```
 
 ---

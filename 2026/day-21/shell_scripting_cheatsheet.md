@@ -587,4 +587,9 @@ Below is a detailed engineering flowchart and cheat sheet infographic mapping ke
 ![Shell Scripting Cheat Sheet Reference Guide](shell_scripting_cheatsheet.png)
 
 ---
-**TrainWithShubham** | Day 21 Complete 📝
+
+Day 21 Complete 📝
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

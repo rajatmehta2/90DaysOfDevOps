@@ -399,3 +399,7 @@ error_log /var/log/nginx/error.log debug;
 ---
 
 Day 05 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

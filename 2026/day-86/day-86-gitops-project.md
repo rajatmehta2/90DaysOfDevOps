@@ -565,26 +565,6 @@ Destroy complete! Resources: 32 destroyed. (Execution time: 14m 32s)
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Completed the 3-day GitOps block? Share your progress on LinkedIn!
-
-```text
-🚀 Just completed the GitOps block of the #90DaysOfDevOps challenge!
-
-I wired an automated end-to-end CI/CD pipeline for the AI-BankApp stack:
-1. Pushing a code change triggers GitHub Actions.
-2. The pipeline compiles and runs tests, packages the app, and pushes the Docker image to DockerHub.
-3. The runner updates the deployment manifest with the git commit SHA and pushes the update back to Git.
-4. ArgoCD detects the change and triggers a rolling update on AWS EKS.
-
-I also tested drift correction by manually changing replicas and deleting services. ArgoCD automatically corrected the drift and restored the target state within seconds!
-
-Special thanks to @TrainWithShubham for the excellent guidance.
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #Kubernetes #GitOps #ArgoCD #CI/CD #AWS
-```
-
----
 **Happy Learning!**
-**TrainWithShubham**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

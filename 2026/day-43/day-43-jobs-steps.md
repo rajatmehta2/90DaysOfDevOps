@@ -504,26 +504,6 @@ Below is the visual verification of the parallel-to-sequential flow from the Act
 3. **Failsafe Outputs**: Ensure that steps setting outputs use proper output routing flags (`echo "name=value" >> $GITHUB_OUTPUT`). Older styles (like `::set-output`) have been deprecated by GitHub.
 4. **Resiliency with continue-on-error**: Use `continue-on-error` alongside `if: failure()` to build fault-tolerant pipelines that report failures without halting code integration cycles.
 
----
-
-## 📱 Learn in Public
-
-Share your DevOps progress with the developer community! Here is a social-media-ready template:
-
-```text
-Day 43 of the #90DaysOfDevOps challenge completed! Today, I explored GitHub Actions Control Flows, orchestration pipelines with multi-job dependencies, dynamic scoping, and advanced conditionals! 🚀
-
-What I built and accomplished today:
-1. Provisioned a Multi-Job Sequential Pipeline enforcing dependencies using `needs:` so deployment guards trigger strictly after builds and tests pass.
-2. Mastered Environment Variables Scoping across Workflow, Job, and Step boundaries alongside pulling system contexts like commit SHAs.
-3. Engineered dynamic inter-job communications, passing run-time generated values (like date stamps) securely using `outputs:` and `needs.<job>.outputs.<name>`.
-4. Constructed Resilient Pipelines implementing conditional guards (branch checks, push filters) and failure recovery blocks using `continue-on-error` and `if: failure()`.
-5. Designed and ran a "Smart Pipeline" executing linting and testing in parallel, concluding with a dynamic deployment summary!
-
-Modularizing pipelines and optimizing execution speed using parallelization are essential for scalable cloud automation! ⚡
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitHubActions #CICD #Automation #CloudArchitecture #SoftwareEngineering #DevOps
-```
-
----
-*Created in collaboration with **TrainWithShubham**.*
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

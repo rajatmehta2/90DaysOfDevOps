@@ -813,21 +813,6 @@ kubectl apply -f argocd-rbac-cm.yaml -n argocd
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Completed today's deep dive? Share your progress on LinkedIn to show your network what you've learned:
-
-> **Day 85 of the #90DaysOfDevOps Challenge Complete!** 🚀
->
-> Today, I went beyond basic deployments and implemented production-grade GitOps workflows using **ArgoCD** on **Amazon EKS**!
->
-> 🔹 **Sync Strategies**: Mastered the differences between manual and automated sync policies, configuring manual gates for production security.
-> 🔹 **Sync Waves & Sequencing**: Used metadata annotations to schedule sequenced deployments (Waves `-2` to `2`), ensuring databases start up before application layers load.
-> 🔹 **GitOps-Correct Rollbacks**: Explored the mechanics of direct rollbacks vs. Git-compliant `git revert` strategies to maintain a clean Git audit trail.
-> 🔹 **App of Apps Pattern**: Set up a Root Application in Git to automatically manage multiple child workloads (AI-BankApp, Monitoring, and Envoy Gateway) in parallel.
-> 🔹 **Projects & RBAC**: Structured secure multi-tenancy rules using AppProjects and RBAC to isolate access across teams and namespaces.
->
-> #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #GitOps #ArgoCD #Kubernetes #EKS #AWS #SRE #ContinuousDelivery #SRE #CloudEngineering #DevOpsJourney
-  
----
-**Prepared with ❤️ by [Rajat Mehta](https://github.com/rajatmehta2)** | [GitHub Portfolio](https://github.com/rajatmehta2/90DaysOfDevOps)
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

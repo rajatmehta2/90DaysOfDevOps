@@ -539,28 +539,6 @@ Whether writing tools for Docker, Kubernetes, or GitHub Actions, the pattern rem
 
 ---
 
-## 📢 Share Your Learning in Public!
-
-Ready to share your progress on LinkedIn? Here is a ready-to-use template:
-
-```text
-🚀 DevOps + Agentic AI: Day 88 of the #90DaysOfDevOps Challenge!
-
-Today, I took my AI-driven SRE setup to the next level by building multi-domain agents and implementing the Model Context Protocol (MCP) to decouple tool definitions from the execution engine.
-
-What I achieved today:
-1. Multi-Tool SRE Agent: Engineered a unified agent that dynamically diagnoses both Docker container failures on the host and Kubernetes pod crashes inside a local cluster.
-2. Model Context Protocol (MCP): Mastered MCP architecture. Built a standalone FastMCP server exposing cluster diagnostics, allowing decoupled clients to dynamically discover and call tools over stdio transport.
-3. CI/CD Failure Analyzer: Built an autonomous pipeline troubleshooter wrapping the GitHub CLI (gh). It lists failed runs, reads workflow YAML files, and parses runner log outputs (with proper truncation) to pinpoint compilation errors instantly.
-4. Custom SRE Extensions: Designed a cluster-wide log searching tool that monitors pod logs to identify database connection timeouts.
-
-Decoupling tools through MCP is a game-changer. We can write system tools once, expose them as an MCP microservice, and consume them inside Cursor, VS Code, Claude Desktop, or our custom Python scripts seamlessly.
-
-Thanks to @TrainWithShubham for the amazing modules!
-
-#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham #AgenticAI #MCP #Kubernetes #Docker #GitHubActions #SRE #GenerativeAI
-```
-
----
 **Happy Learning!**
-**TrainWithShubham**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

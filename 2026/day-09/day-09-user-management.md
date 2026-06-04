@@ -379,3 +379,7 @@ sudo su berlin -c "touch /opt/team-workspace/berlin-fail.txt"
 ---
 
 Day 09 Complete 🚀
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

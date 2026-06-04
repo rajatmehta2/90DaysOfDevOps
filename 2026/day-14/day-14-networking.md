@@ -343,25 +343,8 @@ If the port probe returns a "Connection refused" or hangs indefinitely, we run t
 
 ---
 
-## 📢 Learn in Public & Community Engagement
+Day 14 Complete 🌐
 
-### 🎓 Share Progress
-Network performance and stability form the core of reliable infrastructure! I am thrilled to share my progress for **Day 14** of the **#90DaysOfDevOps** challenge:
-
-* **Today's Key Focus:** Mastered network fundamentals, diagnostic tools, and layer-by-layer troubleshooting steps.
-* **Lab Milestones:** Audited network interfaces, mapped paths, analyzed ports, queried DNS records, checked HTTP header connections, and verified local ports with Netcat.
-* **Join the Journey on LinkedIn:**
-  * `#90DaysOfDevOps`
-  * `#DevOpsKaJosh`
-  * `#TrainWithShubham`
-
----
-
-## 📸 Verification Screenshot
-
-The screenshot below documents the step-by-step commands and network diagram mapping used during today's network diagnostics checks:
-
-![Network Diagnostics and Connectivity Verification](networking_verification.png)
-
----
-**TrainWithShubham** | Day 14 Complete 🌐
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*

@@ -246,4 +246,9 @@ $ git log --oneline --graph --decorate
 ![Git Commit History Terminal Screenshot](git_history_screenshot.png)
 
 ---
-**TrainWithShubham** | Day 22 Complete 📝
+
+Day 22 Complete 📝
+
+**Happy Learning!**
+*Trainer: Shubham Londhe*
+*Study Notes compiled by: Rajat Mehta*
